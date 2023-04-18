@@ -1,18 +1,114 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype'),
+       url('fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styles for the card */
 body {
-    background-color: #0077B5; /* LinkedIn blue */
-    color: #FFFFFF; /* white text */
-    font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+    background-color: #588cbd;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
     text-align: center;
-}
-h1 {
-    font-size: 4rem;
-    margin-top: 10vh;
-}
-img {
-    max-width: 50%;
-    margin-top: 5vh;
-}
-iframe {
-    max-width: 80%;
-    margin-top: 5vh;
-}
+  }
+
+  .devider {
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    text-align:inherit;
+    align-items: center
+  }
+  
+  .card img {
+    margin-right: 80px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+  
+  .card h1 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .ulcontainer h2 {
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    color: black;
+  }
+  
+  .ulcontainer h3 {
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: black;
+    
+  }
+
+  .card ul li {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .card ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .card ul li a:hover {
+    color: #f00;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: white;
+  }
+  
+  /* Styles for last updated */
+  .card h4 {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: greenyellow;
+  }
+
+  .spacer {
+    width: 500px;
+    flex: 1;
+    border-bottom: 1px solid black;
+  }
+
+  .ulcontainer
+  {
+    text-align: left;
+  }
+
+  footer {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600em;
+  }

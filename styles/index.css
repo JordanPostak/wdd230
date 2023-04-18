@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-    background-color: #588cbd;
+    background-color: #185eae;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     width: 100%;
@@ -53,17 +53,16 @@ body {
   
   .ulcontainer h2 {
     text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size: 1.5rem;
+    font-size: 25px;
     margin-bottom: 0px;
     color: black;
   }
-  
-  .ulcontainer h3 {
+
+  .quote {
     text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 18px;
+    margin-top: 0px;
     color: black;
-    
   }
 
   .card ul li {
@@ -81,14 +80,14 @@ body {
     color: #f00;
   }
 
-  .card h3 {
+  .footertext {
     font-size: 1rem;
     margin-top: 0.5rem;
     color: white;
   }
   
   /* Styles for last updated */
-  .card h4 {
+  .lasttext {
     margin-top: 1rem;
     font-size: 0.8rem;
     color: greenyellow;

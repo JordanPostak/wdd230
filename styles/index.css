@@ -125,3 +125,45 @@ body {
     margin: 0;
     width: 570px;
   }
+
+  /* Small screens */
+@media only screen and (max-width: 600px) {
+  .card img {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  }
+  .ulcontainer h2 {
+  font-size: 1.2rem;
+  }
+  .ulcontainer h3 {
+  font-size: 0.8rem;
+  }
+  .card ul li {
+  font-size: 1rem;
+  }
+  .card h1 {
+  font-size: 2rem;
+  }
+  .card h3 {
+  font-size: 0.8rem;
+  }
+  .spacer {
+  width: 90%;
+  }
+  footer {
+  width: 90%;
+  }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1200px) {
+  .card {
+  max-width: 1000px;
+  }
+  .ulcontainer {
+  max-width: 800px;
+  }
+  footer {
+  max-width: 1000px;
+  }
+  }

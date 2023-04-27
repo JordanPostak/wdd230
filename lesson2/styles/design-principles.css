@@ -40,6 +40,10 @@ h1 {
     border-radius: 5px;
     color: white;
 }
+.principle h1{
+    text-align: left;
+    font-size: 30px;
+}
 .principlebody {
     padding: 10px;
     background-color: white;

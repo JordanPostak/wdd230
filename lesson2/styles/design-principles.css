@@ -35,7 +35,7 @@ h1 {
 
 .principle {
     font-weight: bold;
-    background-color: white;
+    background-color: black;
     border: 1px solid #0096ff;
     border-radius: 5px;
     color: white;
@@ -46,9 +46,7 @@ h1 {
 }
 .principlebody {
     padding: 10px;
-    background-color: white;
     border-radius: 5px;
-    color: #185eae;
 }
 .principleheading {
     padding: 10px;

@@ -35,14 +35,14 @@ h1 {
 
 .principle {
     font-weight: bold;
-    background-color: #ccc;
+    background-color: white;
     border: 1px solid #0096ff;
     border-radius: 5px;
     color: white;
 }
 .principlebody {
     padding: 10px;
-    background-color: #ccc;
+    background-color: white;
     border-radius: 5px;
     color: #185eae;
 }

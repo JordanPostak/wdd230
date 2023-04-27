@@ -5,7 +5,7 @@ body {
     font-size: 16px;
     display: block;
     grid-gap: 20px;
-    background-color: #ccc;
+    background-color: #616161;
 }
 header, footer{
     text-align: center;
@@ -34,22 +34,23 @@ h1 {
 }
 
 .principle {
-    background-color: #616161;
+    font-weight: bold;
+    background-color: #ccc;
     border: 1px solid #0096ff;
     border-radius: 5px;
     color: white;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
 }
 .principlebody {
     padding: 10px;
-    background-color: #616161;
+    background-color: #ccc;
     border-radius: 5px;
-    color: white;
+    color: #185eae;
 }
 .principleheading {
     padding: 10px;
     background-color:#185eae;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     color: white;
     text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
 }

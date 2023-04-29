@@ -24,7 +24,8 @@ main {
     font-family: 'Lora', serif;
     font-size: 16px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
     grid-gap: 20px;
 }
 h1 {
@@ -87,7 +88,7 @@ a:hover {
   /* Medium screens */
   @media only screen and (min-width: 601px) and (max-width: 1000px) {
     main {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 50% 50%;
     }
     .principle:nth-last-child(1) {
         grid-column-end: span 2;

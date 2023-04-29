@@ -1,3 +1,4 @@
+
 body {
     width: 75%;
     margin-left: auto;
@@ -10,8 +11,6 @@ header {
     margin-bottom: 20px;
 }
 header, footer{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     padding: 5px;
     background-color: #185eae;
@@ -25,8 +24,8 @@ footer {
     margin-top: 20px;
 }
 main {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
@@ -34,9 +33,7 @@ main {
 }
 h1 {
     background-size: cover;
-    margin-top: 50px;
-    font-size: 50px;
-    font-size: 98%
+    font-size: 40px;
 }
 
 .principle {
@@ -48,7 +45,7 @@ h1 {
     color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
 }
-.principle h1{
+.h3{
     text-align: left;
     font-size: 30px;
 }
@@ -67,7 +64,7 @@ h1 {
 
 .principle img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
 }
 
@@ -92,6 +89,10 @@ a:hover {
     body {
         width: 90%;
     }
+    main {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
   }
   
   /* Medium screens */
@@ -104,10 +105,13 @@ a:hover {
     }
 }
 
-  /* Medium screens */
+  /* Larger screens */
   @media only screen and (min-width: 3000px) {
     body {
-        font-size: 40px;
+        font-size: 250%;
+    }
+    h1 {
+        font-size: 250%;
     }
 }
 

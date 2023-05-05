@@ -6,7 +6,6 @@
   font-style: normal;
 }
 
-/* Styles for the card */
 body {
   font-family: 'Rampart One', cursive;
   display: flex;
@@ -18,7 +17,7 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-
+/* Styles for the card */
 .card {
     background-color: #185eae;
     border-radius: 5px;

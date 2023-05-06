@@ -119,6 +119,8 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 0 20px;
+  padding:10px 20px;
+  border-radius: 50%;
 }
 .navbar-logo img {
     height: 50px; 

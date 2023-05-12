@@ -26,8 +26,12 @@
   --nav-hover-background-color: #013c72;
 }
 body {
+  display: flex;
+  flex-direction: column;
   max-width: 960px;
-  margin: 0 auto;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 4em;
   font-size: 18px;
   text-align: center;
@@ -68,22 +72,38 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+.cell {
+  display: flex;
+  flex-direction: row;
+}
 .colors {
   width: 100%;
   min-width: 300px;
-  margin: 25px auto;
-  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .colors th {
+  margin-top: 20px;
   background-color: #999;
   border: 2px solid;
   border-color: black;
+  text-align: center;
+  padding: 10px;
+  width: 30px;
+  width: 20%
 }
 .colors td{
-  width: 15%;
+  width: 20%;
   height: 3em;
   border: 2px solid;
   border-color: black;
+  text-align: center;
+  padding: 10px;
+}
+.colors tr {
+  display: flex;
+  flex-direction: column;
 }
 .primary {
   background-color: var(--primary-color);
@@ -253,13 +273,4 @@ nav a:hover {
     background-color: var(--accent1-color);
     margin: 15px;
     border-radius: 25px;
-}
-
-/* responsive menu styles */
-@media screen and (max-width: 900px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        position:relative;
-    }
 }

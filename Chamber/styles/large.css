@@ -1,0 +1,29 @@
+/* Media query for large screen size (desktop) */
+/* Media query for medium screen size (tablet) */
+@media screen and (min-width: 1200px) {
+  .vertical {
+    display: flex;
+    margin-top: -120px;
+    margin-left: 130px;
+    padding-bottom: 50px;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  nav ul a {
+    color: var(--nav-link-color);
+    font-size: 12px;
+    display: flex;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 7px;
+}
+  /* Other styles for medium screen size... */
+}

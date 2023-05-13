@@ -1,4 +1,10 @@
 /* Media query for medium screen size (tablet) */
 @media screen and (min-width: 768px) {
-    
+    .spotlight-card.large-screen-only {
+      display: none;
+    }
+    .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
+      margin-left: 100px;
+      margin-right: 100px;
+  }
   }

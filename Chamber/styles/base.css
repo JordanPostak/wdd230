@@ -339,7 +339,7 @@ footer {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
     width: 100%;
     color: var(--headline-color-on-color);

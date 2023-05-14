@@ -93,4 +93,10 @@
   #footerinfo p {
     border-right: 2px solid;
   }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
 }

@@ -160,4 +160,26 @@
   #footerinfo p {
     border-right: 2px solid;
   }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
+  footer .sitespecifics, footer .contact-info {
+    display: flex;
+    flex-direction: row;
+  }
+  #footerinfo {
+    display: flex;
+  }
+  #footerinfo p {
+    border-right: 2px solid;
+  }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
 }

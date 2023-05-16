@@ -300,9 +300,15 @@ hr {
     margin-bottom: 20px;
     border-radius: 50px;
 }
+.event-card hr, .weather-card hr, .news-card hr, .spotlight-card hr, .join-card hr{
+    margin: 0;
+    margin-left: -15px;
+    width: 100%;
+}
 .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
     color: var(--accent3-color);
     text-align: center;
+    margin-top: 30px;
 }
 .event-card p, .news-card p, .spotlight-card p, .join-card p{
     background-color: var(--accent1-color);

@@ -36,4 +36,5 @@ button.addEventListener('click', function() {
     // Send focus back to the input element
     input.focus();
   }
+  
 });

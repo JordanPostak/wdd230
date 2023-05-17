@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="styles/medium.css">
     <!-- enhance-desktop -->
 	<link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/png" href="images/sanpointicon.png">
+    <link rel="icon" type="image/ico" href="images/smallsanpointicon.ico">
     <script src="/Chamber/scripts/current-date.js"></script>
 </head>
 <body>
@@ -53,14 +53,15 @@
         </nav>
     </header>
     <main>
+        <!-- page content -->
         <div class="hero-section">
-            <img src="images/sandpoint-hero.jpg" alt="Image of Sandpoint Idaho">
-            
-            <!-- page content goes here -->
-            <div class="hero-message">
-                <h3>Welcome to the...</h3>
-                <h1>Sandpoint Idaho</h1>
-                <h2>Chamber of Commerce Website</h2>
+            <div class="hero">
+                <img src="images/sandpoint-hero.jpg" alt="Image of Sandpoint Idaho">
+                <div class="hero-message">
+                    <h3>Welcome to the...</h3>
+                    <h1>Sandpoint Idaho</h1>
+                    <h2>Chamber of Commerce Website</h2>
+                </div>
             </div>
             <div class="call-to-action">
                 <h2>Discover Sandpoint</h2>
@@ -71,14 +72,15 @@
             <section class="events-section">
                 <h2>Events</h2>
                 <hr>
-                    <div class="event-card">
+                    <div class="event-card" id="eventCard1">
                         <h3>Sandpoint Farmer's Market</h3>
                         <p>Date: July 15, 2023<br>
                         Time: 9:00 AM - 1:00 PM<br>
                         Location: Farmin Park, Sandpoint<br>
                         <br>
                         Join us for the weekly Sandpoint Farmer's Market, where you can find a wide variety of fresh produce, local crafts, delicious food, and live music. Explore the vibrant community atmosphere and support local vendors.</p>
-                        <hr>
+                    </div>
+                    <div class="event-card hidden" id="eventCard2">
                         <h3>Sandpoint Summer Festival</h3>
                         <p>Date: July 22-24, 2023<br>
                         Location: Downtown Sandpoint<br>
@@ -113,7 +115,7 @@
                 We are thrilled to announce that Sandpoint has been recognized as the "Best Small Town for Outdoor Recreation" by Outdoor Magazine. With its stunning natural beauty, access to hiking trails, water activities, and a vibrant community, Sandpoint offers endless opportunities for outdoor enthusiasts. Come and experience why Sandpoint is a haven for adventure seekers!</p>
             </div>
         </section>
-        <section class="spotlights-section">
+        <section class="spotlight-section">
             <h2>Spotlights</h2>
             <hr>
             <div class="spotlight-view">
@@ -169,5 +171,6 @@
 		</div>
       </footer>
       <script src="/Chamber/scripts/hamburger.js"></script>
+      <script src="/Chamber/scripts/toggle-visibility.js"></script>
     </body>
 </html>

@@ -1,11 +1,11 @@
 /* Media query for medium screen size (tablet) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .spotlight-card.large-screen-only {
-      display: none;
-    }
-    .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
-      margin-left: 100px;
-      margin-right: 100px;
+  .spotlight-card.large-screen-only {
+    display: none;
+  }
+  .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .join-button {
     margin-left: 200px;
@@ -17,41 +17,40 @@
   nav h2{
       font-size: 1rem;
   }
-  .hero-message {
-    margin-top: -150px;
-    padding: 10px;
+  main {
+    margin-top: 180px;
+  }
+  main .hero-message {
+    top: -8rem;
+    left: -2rem;
   }
   main .hero-message h1 {
-    font-size: 2rem;
-    margin-left: 150px;
+    font-size: 1.8rem;
   }
   main .hero-message h2 {
-      font-size: 1.5rem;
-      margin-left: 90px;
+      font-size: 1.2rem;
   }
   main .hero-message h3 {
-    font-size: 1rem;
-    margin-left: 180px;
+    font-size: .8rem;
   }
   .join-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
- }
- .news-section {
-  order: 1;
   }
-
-  .spotlights-section {
+  .news-section {
+  order: 1;
+  margin-top: 30px;
+  }
+  .spotlight-section {
     order: 2;
   }
   .spotlight-view {
     display: flex;
     flex-direction: row;
   }
-  .spotlight-card {
-    justify-content: space-between;
-    width: 42%;
-    margin-right: 20px;
+  .spotlight-card:nth-last-child(2) {
+    margin-left: 20px;
   }
   .spotlight-card img{
     width: 100%;
@@ -66,7 +65,7 @@
     display: flex;
     flex-direction: row;
     order: 4;
-    width: 50%;
+    width: 100%;
     margin-left: 0 auto;
     margin-right: 0 auto;
     justify-content: center;
@@ -77,10 +76,10 @@
   .event-card, .weather-card{
     justify-content: space-between;
     margin-right: 20px;
-    width: 250px;
+    width: auto;
+    height: auto;
   }
   .events-section hr, .weather-section hr{
-    width: 90%;
     float: left;
   }
   footer .sitespecifics, footer .contact-info {

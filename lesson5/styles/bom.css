@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+    align-items: center;
+    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Acme, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: .8rem;
+}
+
+header, footer{
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 43px;
+}
+footer img {
+    height: 15px;
+}
+
+main {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: .3rem;
+	background-color: #ccfaef;
+	display: flex;
+	flex-direction: column;
+    width: 350px;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+button {
+	padding: 0.5rem;
+}
+
+button {
+	margin: 0.2rem;
+}
+
+.delete {
+	width: fit-content;
+    float: right;
+    margin-top: -10px;
+}
+
+.input {
+	display: flex;
+	gap: 1rem;
+}
+
+.list {
+	padding: 0.5rem;
+}
+
+ul {
+	margin: 1.3rem;
+    padding: 20px;
+    margin-top: .6rem;
+	list-style: none;
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid;
+    border-color: rgb(197, 195, 195);
+}
+
+li {
+	justify-content: space-between;
+    
+}
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2.3rem;
+	}
+
+	main {
+		width: 450px;
+	}
+}

@@ -4,7 +4,7 @@
     display: flex;
     margin-top: -115px;
     margin-left: 300px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
   }
   nav button {
     display: none;
@@ -32,17 +32,15 @@
     width: 100%;
     align-items: start;
     margin-top: 134px;
-    font-size: 1rem;
+    font-size: .7rem;
     margin-left: 20px;
     margin-right: 20px;
   }
   main .hero-section .call-to-action p{
     font-size: 1rem;
-    margin-top: -10px;
   }
   main .hero-section .call-to-action h2{
     font-size: 2rem;
-    margin-top: -80px;
   }
   .hero-section img {
     border-radius: 50px;
@@ -51,30 +49,27 @@
   .hero-section {
     position: relative;
     grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 75px;
+    grid-row: 1/3;
+    margin-top: 4.5rem;
+    align-self: stretch
+  }
+  .call-to-action {
+    align-self: stretch
   }
  .hero-section .hero-message h3 {
-  font-size: .7rem; 
+  font-size: .8rem; 
   }
 
   .hero-section .hero-message h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .hero-section .hero-message h2 {
-    font-size: 1rem; 
+    font-size: 1.3rem; 
   }
   .hero-message {
-    margin-top: -120px;
-    margin-left: 20px;
-  }
-  .hero-section .call-to-action h2 {
-  font-size: 3rem;
-  }
-
-  .hero-section .call-to-action p {
-    font-size: 2rem; 
+    margin-top: -2.5rem;
+    margin-left: -1rem;
   }
   .footer {
     width: 150%;
@@ -84,15 +79,6 @@
     flex-direction: column;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin: 0;
-  }
-  .events-section hr, .weather-section hr{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
   .events-section,
   .weather-section {
@@ -126,36 +112,20 @@
     margin-left: 0;
     margin-right: 0;
   }
-  hr {
-    height: 1px;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
   .news-section {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    width: 92%;
-    margin-left: 40px;
-    margin-right: 0;
+    width: 87%;
+    margin-top: 1.5rem;
   }
   .news-card {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .news-section hr{
-    width: 100%;
-    float: left;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 2rem;
   }
   .spotlight-section {
     display: flex;
     flex-direction: column;
     align-items: left;
-    float: left;
     width: 100%;
     grid-column: 3 / 4;
     grid-row: 1 / 4;
@@ -169,7 +139,6 @@
     width: 100%;
   }
   .spotlight-view{
-    float: left;
     margin-left: 0;
   }
   .spotlight-card {
@@ -181,11 +150,6 @@
   }
   .spotlight-card img{
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .call-to-action {
-    margin-top: 100px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -237,5 +201,12 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  float: left;
+ }
+ .hero-section, .news-section {
+  margin-left: 3rem;
+ }
+ .spotlight-section {
+  margin-left: 1.8rem;
  }
 }

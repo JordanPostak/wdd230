@@ -38,6 +38,9 @@
     display: flex;
     flex-direction: column;
   }
+  .spotlight-card{
+    width: 50%;
+}
   .news-section {
   order: 1;
   margin-top: 30px;

@@ -24,6 +24,9 @@
     padding-right: 10px;
     margin-left: 7px;
   }
+  .facebook-logo img, .linkedin-logo img{
+    height: 30px;
+  }
   main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;

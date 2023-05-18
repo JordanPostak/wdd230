@@ -328,6 +328,7 @@ section h2 {
     margin-top: 10px;
     width: 100%;
 }
+
 .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
     color: var(--accent3-color);
     text-align: center;

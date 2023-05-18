@@ -20,4 +20,5 @@ document.addEventListener('DOMContentLoaded', function() {
  
      // Retrieves the HTML element with the ID "lastModified" and sets its innerHTML to a string that says "Last updated: " followed by the date and time when the document was last modified
      document.querySelector("#lastModified").innerHTML = "Last updated: " + lastModified;
+     
 })

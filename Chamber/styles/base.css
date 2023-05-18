@@ -92,6 +92,19 @@ header{
     border: 1px solid;
     border-color: rgba(255, 255, 255, 0.2);;
 }
+.banner {
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--accent3-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
 #date h2 {
     margin-top: 5px;
     display: flex;

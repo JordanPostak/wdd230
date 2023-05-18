@@ -128,7 +128,7 @@
   .spotlight-section {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    justify-content: left;
     width: 100%;
     grid-column: 3 / 4;
     grid-row: 1 / 4;

@@ -111,6 +111,9 @@
   .join-card {
     width: 100%;
   }
+  .spotlight-section hr, .spotlight-section h2 {
+    margin-left: -20px;
+}
   .join-button {
     margin: 20px 40px;
   }

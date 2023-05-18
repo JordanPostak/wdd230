@@ -9,6 +9,12 @@
   nav button {
     display: none;
   }
+  .horizontal h1{
+    font-size: 1.5rem;
+  }
+  .horizontal h2{
+    font-size: 1rem;
+  }
   nav ul {
     display: flex;
     flex-direction: row;
@@ -17,7 +23,7 @@
   }
   nav ul a {
     color: var(--nav-link-color);
-    font-size: 12px;
+    font-size: 1.2rem;
     display: flex;
     border-radius: 50%;
     padding-left: 10px;

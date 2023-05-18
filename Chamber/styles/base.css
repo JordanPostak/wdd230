@@ -124,7 +124,7 @@ nav h1{
     color: var(--headline-color-on-color);
     font-size: 1rem;
     font-family: var(--heading-font);
-    font-style: italic;
+    font-style: bold;
 }
 nav h2{
     color: var(--headline-color-on-color);
@@ -288,18 +288,18 @@ main .hero-message h3 {
     position: relative;
     z-index: 1;
 
-    color: var(--accent3-color);
+    color: var(--accent1-color);
     font-size: .6rem;
 }
 main .hero-message h1 {
     position: relative;
-    color: var(--accent3-color);
+    color: var(--accent1-color);
     font-size: 1rem;
     z-index: 1;
 }
 main .hero-message h2 {
     position: relative;
-    color: var(--accent3-color);
+    color: var(--accent1-color);
     font-size: .7rem;
     z-index: 1;
 }
@@ -462,6 +462,10 @@ footer .location {
     width: 90%;
     text-align: center;
     justify-content: center;
+}
+.contact-info h2{
+    color: var(--accent1-color);
+    font-size: 1rem;
 }
 .sitespecifics {
     display: flex;

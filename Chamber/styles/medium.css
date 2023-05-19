@@ -84,6 +84,7 @@
   }
   .events-section hr, .weather-section hr{
     float: left;
+    width: 94%;
   }
   footer .sitespecifics, footer .contact-info {
     display: flex;

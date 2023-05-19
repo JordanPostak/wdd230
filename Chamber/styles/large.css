@@ -30,6 +30,15 @@
     padding-right: 10px;
     margin-left: 7px;
   }
+  nav.scrolled .primaryNav {
+    display: flex;
+}
+nav.scrolled ul li a {
+    margin-top: 145px;
+}
+nav.scrolled ul {
+  float: left;
+} 
   .facebook-logo img, .linkedin-logo img{
     height: 30px;
   }

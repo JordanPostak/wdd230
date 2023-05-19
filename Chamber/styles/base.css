@@ -213,6 +213,10 @@ nav ul li a.active {
     color: var(--headline-color-on-white);
     background-color: rgba(255, 255, 255, 0.5);
 }
+nav.scrolled ul li a.active {
+    color: var(--headline-color-on-white);
+    background-color: rgba(255, 255, 255, 0.847);
+}
 nav ul {
     display: none;
     flex-direction: column;
@@ -254,6 +258,35 @@ nav button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+nav.scrolled {
+    background-color: transparent;
+    box-shadow: none;
+}
+.hamburgerBtn {
+    color: var(--accent3-color);
+}
+nav.scrolled .navbar-logo,
+nav.scrolled .horizontal h1,
+nav.scrolled .horizontal h2,
+nav.scrolled .facebook-logo,
+nav.scrolled .linkedin-logo,
+nav.scrolled #date,
+nav.scrolled .banner {
+    display: none;
+}
+nav.scrolled ul li a{
+    background-color:#2771b6d1;
+    border: 2px solid;
+    border-color: var(--accent3-color);
+}
+nav.scrolled ul {
+    float: right;
+}  
+nav.scrolled #hamburgerBtn {
+    background-color:#2771b6d1;
+    border: 2px solid;
+    border-color: var(--accent3-color);
 }
 
 /* Main design */

@@ -25,7 +25,7 @@
         <nav id="navbar" class="closed">
             <div class="horizontal">
                 <a href="#" class="navbar-logo">
-                    <img src="images/smallsanpointicon.png" alt="SandPoint Chamber of Commerce logo">
+                    <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
                 </a>
                 <div>
                     <h1>Sandpoint Idaho</h1>
@@ -56,8 +56,19 @@
         <!-- page content -->
         <div class="hero-section">
             <div class="hero">
-                <img src="images/sandpoint-hero.jpg" alt="Image of Sandpoint Idaho">
-                <div class="hero-message">
+                <picture>
+                    <source srcset="images/wdd230-org-300.jpg" media="(max-width: 767px)">
+                    <source srcset="images/wdd230-org-600-medium.jpg" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="images/wdd230-org-600-large.jpg" media="(min-width: 1200px)">
+                    <img src="images/wdd230-org.jpg" alt="Image of Sandpoint Idaho">
+                    <div class="hero-message">
+                </picture>
+                <!--<picture>
+                    <source srcset="images/sandpoint-hero-300.jpg" media="(max-width: 767px)">
+                       <source srcset="images/sandpoint-hero-600.jpg" media="(min-width: 768px) and (min-width: 1200px)">
+                   <img src="images/sandpoint-hero.jpg" alt="Image of Sandpoint Idaho">
+                   <div class="hero-message">
+               </picture>-->
                     <h3>Welcome to the...</h3>
                     <h1>Sandpoint Idaho</h1>
                     <h2>Chamber of Commerce Website</h2>
@@ -94,8 +105,9 @@
                 <div class="weather-card">
                     <img src="images//weather-sunny.png" alt="Weather Icon">
                     <h3>Today's Weather</h3>
-                    <p>Temperature: 75°F</p>
-                    <p>Conditions: Sunny</p>
+                    <p>Temperature: <span id="temperature">50</span>°F</p>
+                    <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
                 </div>
             </section>
         </div>
@@ -120,7 +132,9 @@
             <hr>
             <div class="spotlight-view">
                 <div class="spotlight-card">
+                    <picture></picture>
                     <img src="images/wide-shot-of-the-gallery.jpg" alt="Spotlight 1 Image">
+                    </picture>
                     <h3>Local Art Exhibition</h3>
                     <p>Discover the vibrant local art scene at the upcoming art exhibition. Immerse yourself in a collection of diverse artworks created by talented artists from the Sandpoint community.</p>
                 </div>
@@ -148,7 +162,7 @@
     <footer>
         <div class="sitespecifics">
             <a href="#" class="footer-logo">
-                <img src="images/smallsanpointicon.png" alt="SandPoint Chamber of Commerce logo">
+                <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
             </a>
             <div class="contact-info">
                 <div>
@@ -174,5 +188,6 @@
       <script src="scripts/slide.js"></script>
       <script src="scripts/banner.js"></script>
       <script src="scripts/nav-scroll.js"></script>
+      <script src="scripts/windchill.js"></script>
     </body>
 </html>

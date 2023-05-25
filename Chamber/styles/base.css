@@ -494,11 +494,11 @@ footer {
     border-color: var(--accent3-color);
     border-radius: 50px
 }
-footer h2 {
+footer h1 {
     font-size: .8rem;
     margin-bottom: 10px;
 }
-footer h3 {
+footer h2 {
     color: var(--accent1-color);
     font-size: .8rem;
 }
@@ -525,7 +525,7 @@ footer .location {
     text-align: center;
     justify-content: center;
 }
-.contact-info h2{
+.contact-info h1{
     color: var(--headline-color-on-color);
     font-size: 1rem;
 }
@@ -547,7 +547,7 @@ footer .location {
     border-color: rgba(255, 255, 255, 0.2);
     width: 100%;
 }
-#footerinfo h2 {
+#footerinfo h1 {
     margin-top: 5px;
     display: flex;
     flex-direction: column;

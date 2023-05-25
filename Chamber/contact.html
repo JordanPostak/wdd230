@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information and instructions for Sandpoint, Idaho Chamber of Commerce">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Discover Sandpoint</title>
+    <link rel="icon" type="image/ico" href="images/smallsanpointicon.ico">
+    <script src="scripts/current-date.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="navbar" class="closed">
+            <div class="horizontal">
+                <a href="#" class="navbar-logo">
+                    <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
+                </a>
+                <div>
+                    <h1>Sandpoint Idaho</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+                <div class="navbar-toggle">
+                    <a href="#" class="facebook-logo">
+                        <img src="images/facebook_icon.png" alt="Facebook logo">
+                    </a>
+                    <a href="#" class="linkedin-logo">
+                        <img src="images/linkedin_icon.png" alt="linkedin logo">
+                    </a>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>   
+                </div> 
+            </div>
+            <div id="date">current date</div>
+            <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? We'd love to hear from you. Fill out the contact form below or reach out to us using the provided contact information.</p>
+            <div class="contact-info">
+                <h3>Contact Information:</h3>
+                <ul>
+                    <li><strong>Phone:</strong> +(123) 456-7890</li>
+                    <li><strong>Email:</strong> info@sandpointchamber.com</li>
+                    <li><strong>Address:</strong> 58 Bridge St, Sandpoint, ID 83864</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a message:</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sitespecifics">
+            <a href="#" class="footer-logo">
+                <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
+            </a>
+            <div class="contact-info">
+                <div>
+                    <h1>The Sandpoint Idaho<br>Chamber of Commerce</h1>
+                    <h2>58 Bridge St, <br>Sandpoint, ID 83864</h2>
+                </div>
+                <div class="info">
+                    <h2>info@sandpointchamber.com</h2>
+                    <h2>+(123) 456-7890</h2>
+                    <a href="https://goo.gl/maps/xk9Q2NxnaMPZs7vy8" target="_blank" class="location">
+                        <img src="images/pin.png" alt="Map pin logo">Location Map
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footerinfo">
+			<p>&copy; <span id="year"></span>&nbsp;Sandpoint Chamber&nbsp;</p>
+            <p><b>&nbsp;Jordan Postak&nbsp;</b></p><p>&nbsp;WDD 230 Project&nbsp;</p>
+			<p class="lasttext">&nbsp;<em><span id="lastModified">&last modified: never</span></em>&nbsp;</p>
+		</div>
+      </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/slide.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/nav-scroll.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

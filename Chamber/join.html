@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information and tools for joining the Sandpoint, Idaho Chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Sandpoint Directory</title>
+    <link rel="icon" type="image/ico" href="images/smallsanpointicon.ico">
+    <script src="scripts/current-date.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="navbar" class="closed">
+            <div class="horizontal">
+                <a href="#" class="navbar-logo">
+                    <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
+                </a>
+                <div>
+                    <h1>Sandpoint Idaho</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+                <div class="navbar-toggle">
+                    <a href="#" class="facebook-logo">
+                        <img src="images/facebook_icon.png" alt="Facebook logo">
+                    </a>
+                    <a href="#" class="linkedin-logo">
+                        <img src="images/linkedin_icon.png" alt="linkedin logo">
+                    </a>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>   
+                </div> 
+            </div>
+            <div id="date">current date</div>
+            <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="join-section">
+            <h2>Join the Chamber</h2>
+            <p>Become a member of the Sandpoint Chamber of Commerce and unlock a world of opportunities for your business. Enjoy networking events, promotional opportunities, business resources, and much more.</p>
+            <div class="membership-types">
+                <h3>Membership Types</h3>
+                <ul>
+                    <li>Individual Membership</li>
+                    <li>Small Business Membership</li>
+                    <li>Corporate Membership</li>
+                    <li>Non-profit Membership</li>
+                </ul>
+            </div>
+            <div class="join-form">
+                <h3>Fill out the form below to join:</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="membership">Membership Type:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="" selected disabled>Select a membership type</option>
+                        <option value="individual">Individual Membership</option>
+                        <option value="small-business">Small Business Membership</option>
+                        <option value="corporate">Corporate Membership</option>
+                        <option value="non-profit">Non-profit Membership</option>
+                    </select>
+                    <button type="submit">Join Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sitespecifics">
+            <a href="#" class="footer-logo">
+                <img src="images/smallsanpointicon.webp" alt="SandPoint Chamber of Commerce logo">
+            </a>
+            <div class="contact-info">
+                <div>
+                    <h1>The Sandpoint Idaho<br>Chamber of Commerce</h1>
+                    <h2>58 Bridge St, <br>Sandpoint, ID 83864</h2>
+                </div>
+                <div class="info">
+                    <h2>info@sandpointchamber.com</h2>
+                    <h2>+(123) 456-7890</h2>
+                    <a href="https://goo.gl/maps/xk9Q2NxnaMPZs7vy8" target="_blank" class="location">
+                        <img src="images/pin.png" alt="Map pin logo">Location Map
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footerinfo">
+			<p>&copy; <span id="year"></span>&nbsp;Sandpoint Chamber&nbsp;</p>
+            <p><b>&nbsp;Jordan Postak&nbsp;</b></p><p>&nbsp;WDD 230 Project&nbsp;</p>
+			<p class="lasttext">&nbsp;<em><span id="lastModified">&last modified: never</span></em>&nbsp;</p>
+		</div>
+      </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/slide.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/nav-scroll.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

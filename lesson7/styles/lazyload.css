@@ -34,10 +34,6 @@ body {
 }
 
 .image-wrapper img[data-src] {
-  filter: blur(0em);
+  filter: blur(.2em);
 }
 
-.image-wrapper.loaded img[data-src] {
-  filter: blur(0.5em);
-  transition-delay: 1s;
-}

@@ -150,8 +150,7 @@ nav h1{
 }
 nav h2{
     color: var(--headline-color-on-color);
-    font-size: .7rem;
-    margin-top: -15px;
+    font-size: .5rem;
     font-family: var(--heading-font);
     font-style: italic;
     transition: 0.5s;
@@ -397,6 +396,12 @@ section h2 {
 }
 .discover h3 {
     margin-top: 30px;
+  }
+  .discover h2 {
+    font-size: 2rem;
+  }
+  .discover .hero h2 {
+    font-size: 2rem;
   }
 .discover img {
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);

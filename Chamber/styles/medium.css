@@ -33,6 +33,16 @@
   main .hero-message h3 {
     font-size: .8rem;
   }
+  .image-card img {
+    transition: transform 0.5s;
+  }
+  .image-card img:hover {
+    transform: scale(1.1);
+    border: 7px solid;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.66), 0 6px 12px rgba(0,0,0,0.83);
+    border-color: var(--accent3-color);
+    transition: 0.5s;
+  }
   .join-section {
     width: 100%;
     display: flex;

@@ -1,6 +1,31 @@
 /* Media query for large screen size (desktop) */
 @media screen and (min-width: 1200px) {
-  
+  :root {
+    /* color palette */
+    --primary-color: #013c72;
+    --secondary-color:#2770b6;
+    --accent1-color: #ffffff;
+    --accent2-color: #99dee4;
+    --accent3-color: #ff9d00;
+    --accent4-color: #eaeaea;
+    --accent5-color: #000000;
+    
+
+    /* fonts */
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    /* chosen from among colors above */
+    --headline-color-on-white: #013c72;  /* headlines on a white background */ 
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #013c72; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #fffafa; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #2770b6  ;
+    --nav-link-color: #fffafa;
+    --nav-background-color: #2770b6;
+    --nav-hover-link-color: #ff9d00;
+    --nav-hover-background-color: #013c72;
+}
   #primaryNav {
     display: flex;
     margin-top: -115px;
@@ -71,6 +96,39 @@ nav.scrolled ul {
     margin-top: 4.5rem;
     align-self: stretch
   }
+  .discover {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+  .discover .hero {
+    margin-bottom: -80px;
+    width: 150%;
+    align-self: center;
+  }
+  .discover .hero .hero-message h1 {
+    font-size: 2rem;
+  }
+  .image-card img {
+    transition: transform 0.5s;
+  }
+  .image-card img:hover {
+    transform: scale(1.1);
+    border: 7px solid;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.66), 0 6px 12px rgba(0,0,0,0.83);
+    border-color: var(--accent3-color);
+    transition: 0.5s;
+  }
+  .discover h3 {
+    font-size: 1.3rem; 
+    margin-top: 60px;
+  }
+  .discover hr {
+    margin-top: -20px;
+  }
+
   .call-to-action {
     align-self: stretch
   }

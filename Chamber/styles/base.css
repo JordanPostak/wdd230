@@ -42,9 +42,12 @@ body {
     background-color: var(--accent4-color);
     color: var(--headline-color-on-white);
 }
+a {
+    color: var(--accent3-color);
+}
 h1 {
     font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
+    color: var(--accent3-color);
 }
 hr {
     width: 100%;
@@ -330,6 +333,22 @@ main .hero-section {
     border-radius: 25px;
     margin-bottom: 30px;
 }
+  
+  .image-card img {
+    width: 100%;
+    height: 100%;
+    filter: blur(0em);
+    transition: filter .5s;
+  }
+  
+  .image-card.loaded img {
+    filter: blur(0em);
+  }
+  
+  .image-card img[data-src] {
+    filter: blur(.2em);
+  }
+  
 .news- {
     float: left;
 }
@@ -347,18 +366,18 @@ main  img {
 main .hero-message h3 {
     position: relative;
     z-index: 1;
-    color: var(--accent5-color);
+    color: var(--accent3-color);
     font-size: .6rem;
 }
 main .hero-message h1 {
     position: relative;
-    color: var(--accent5-color);
+    color: var(--accent3-color);
     font-size: 1rem;
     z-index: 1;
 }
 main .hero-message h2 {
     position: relative;
-    color: var(--accent5-color);
+    color: var(--accent3-color);
     font-size: .7rem;
     z-index: 1;
 }
@@ -376,30 +395,47 @@ main .hero-message h2 {
 section h2 {
     font-size: 1.5rem;
 }
-.event-card, .weather-card, .news-card, .spotlight-card, .join-card{
+.discover h3 {
+    margin-top: 30px;
+  }
+.discover img {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
+}
+.discover .gallery .image-card h3{
+    color: var(--accent3-color);
+}
+.discover .gallery .image-card h1{
+    font-size: .8rem;
+    color: var(--accent2-color);
+}
+.discover .hero .hero-message h1 {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+.event-card, .weather-card, .news-card, .spotlight-card, .join-card, .image-card{
     background-color: var(--primary-color);
     padding: 15px 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
     margin-bottom: 20px;
     border-radius: 25px;
 }
-.event-card hr, .weather-card hr, .news-card hr, .spotlight-card hr, .join-card hr{
+.event-card hr, .weather-card hr, .news-card hr, .spotlight-card hr, .join-card hr, .image-card hr{
     margin-top: 10px;
     width: 100%;
 }
 
-.event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
+.event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3, .image-card h3{
     color: var(--accent3-color);
     text-align: center;
     margin-top: 20px;
     font-size: 1.2rem;
 }
-.event-card p, .news-card p, .spotlight-card p, .join-card p{
+.event-card p, .news-card p, .spotlight-card p, .join-card p, .image-card p{
     background-color: var(--accent1-color);
     border-radius: 25px;
     padding: 15px;
 }
-.event-card img, .news-card img, .spotlight-card img{
+.event-card img, .news-card img, .spotlight-card img, .image-card img{
     border-radius: 25px;
 }
 .spotlight-card.large-screen-only {

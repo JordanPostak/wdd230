@@ -46,37 +46,133 @@
         </nav>
     </header>
     <main>
-        <section class="discover-section">
-            <h2>Discover Sandpoint</h2>
+        <section class="discover">
+            <div class="hero">
+                <picture>
+                     <source srcset="images/sandpoint-hiking-panorama-600.jpg" media="(max-width: 767px)">
+                    <source srcset="images/sandpoint-hiking-panorama-1200.jpg" media="(min-width: 1200px)">
+                    <img src="images/sandpoint-hiking-panorama.jpg" alt="beautiful hiking view of Sandpoint Idaho">
+                </picture>
+                <div class="hero-message">
+                    <h1>Discover Sandpoint</h1>
+                </div>
+            </div>
+            <h3 id="days-between-visits"></h3>
             <div class="gallery">
-                <div class="image">
-                    <img src="images/discover1.jpg" alt="Image 1">
-                    <div class="image-overlay">
-                        <h3>Image 1 Description</h3>
+                <div class="spotlights">
+                    <h3>Spotlights</h3>
+                    <hr>
+                    <div class="image-card" id="gallery">
+                        <source srcset="images/wide-shot-of-the-gallery-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/wide-shot-of-the-gallery-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/wide-shot-of-the-gallery-1200.jpg" alt="Image">
+                        <h3>Local Art Exhibition</h3>
+                        <h1>When?: September 14th 2023</h1>
+                        <h1>Where?: 222 Exhibition Boulevard, Sandpoint Idaho, 83864</h1>
+                        <div class="image-description">
+                            <p>Immerse yourself in the vibrant and captivating world of the local art scene at the highly anticipated art exhibition. This eagerly awaited event offers a unique opportunity to explore and discover the incredible talent of artists hailing from the Sandpoint community. Prepare to be amazed as you delve into a diverse collection of artworks, each one bearing the distinct signature of its creator.</p>
+
+                            <p>Step into a realm where creativity knows no bounds, where imagination is brought to life on canvas, sculpture, and various other mediums. The exhibition showcases a rich tapestry of artistic expressions, ranging from traditional to contemporary styles, ensuring there is something to captivate every artistic sensibility.</p>
+                                
+                            <p>As you wander through the carefully curated displays, you will encounter a cornucopia of colors, textures, and themes, each artwork conveying its own narrative and evoking a unique emotional response. Marvel at the skillful brushstrokes, intricate details, and the sheer passion that radiates from every piece.</p>
+                        </div>
+                    </div>
+                    <div class="image-card" id="hiking">
+                        <source srcset="images/hiking-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/hiking-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/hiking-1200.jpg" alt="Image">
+                        <h3>Hiking Adventure</h3>
+                        <h1>When?: Anytime</h1>
+                        <h1>Where?: Wilderness</h1>
+                        <div class="image-description">
+                            <p>Embark on an unforgettable hiking adventure through the scenic trails of Sandpoint, Idaho. With its diverse landscapes and natural beauty, Sandpoint offers a plethora of hiking opportunities for outdoor enthusiasts. Whether you're a seasoned hiker or a nature lover looking for a leisurely stroll, the trails in Sandpoint cater to all levels of experience. From dense forests to stunning mountain vistas, each step on the trails reveals the captivating beauty of the region.</p>
+                                
+                            <p>Beyond the physical and natural rewards, hiking in Sandpoint offers a chance to disconnect from the hustle and bustle of everyday life and reconnect with the peace and serenity of the great outdoors. The trails provide a perfect opportunity to rejuvenate your mind, body, and soul as you breathe in the fresh mountain air, listen to the soothing sounds of nature, and appreciate the awe-inspiring landscapes that surround you.</p>
+                                
+                            <p>Whether you seek adventure, wildlife encounters, or a sense of inner peace, hiking in Sandpoint is an experience that will leave a lasting impression. So lace up your hiking boots, grab your backpack, and set off on a journey to explore the breathtaking landscapes and discover the hidden gems of this remarkable destination. Let the trails of Sandpoint guide you on an unforgettable adventure, where every step brings you closer to the wonders of nature and the joy of exploration.</p>
+                        </div>
+                    </div>
+                    <div class="image-card" id="water">
+                        <source srcset="images/water-park-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/water-park-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/water-park-1200.jpg" alt="Image of water park">
+                        <h3>Grand Opening of Water Adventure Park</h3>
+                        <h1>When?: July 24th 2023</h1>
+                        <h1>Where?: 333 Water Park way, Sandpoint Idaho, 83864</h1>
+                        <div class="image-description">
+                            <p>Join us for the highly anticipated grand opening of Sandpoint's newest attraction, the exhilarating Water Adventure Park! Get ready to make a splash and create unforgettable memories as you dive into a world of aquatic fun and excitement. With a wide array of thrilling water slides, relaxing lazy rivers, refreshing wave pools, and so much more, this grand opening promises to be a day filled with laughter, joy, and endless entertainment for visitors of all ages.</p>
+
+                            <p>As the gates of the Water Adventure Park swing open, you'll be greeted by the sight of towering water slides that beckon thrill-seekers to take the plunge. Feel the adrenaline rush as you twist and turn down winding slides, experiencing heart-pounding drops and exhilarating twists. For those seeking a more laid-back experience, the lazy rivers offer a chance to relax and float along gentle currents, taking in the scenic surroundings and enjoying a leisurely water adventure.</p>
+                                
+                            <p>Mark your calendars and be a part of this momentous occasion as Sandpoint unveils its newest gem, the Water Adventure Park. Get ready to immerse yourself in a day of aquatic thrills, laughter, and non-stop fun. Whether you're a daredevil seeking adrenaline-pumping experiences or a family looking to create cherished memories, the grand opening of the Water Adventure Park is an event not to be missed. So grab your swimsuits, gather your loved ones, and join us for an unforgettable day of water-filled adventures at Sandpoint's most anticipated grand opening yet.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="images/discover2.jpg" alt="Image 2">
-                    <div class="image-overlay">
-                        <h3>Image 2 Description</h3>
+                <div class="events">
+                    <h3>Events</h3>
+                    <hr>
+                    <div class="image-card" id="market">
+                        <source srcset="images/farmers-market-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/farmers-market-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/farmers-market-1200.jpg" alt="Image">
+                        <h3>Sandpoint Farmer's Market</h3>
+                        <h1>When?: July 15th 2023 9:00 AM - 1:00 PM</h1>
+                        <h1>Where?: Farmin Park, Sandpoint Idaho, 83864</h1>
+                        <div class="image-description">
+                            <p>As you stroll through the lively market stalls, you'll be greeted by the colorful sights and enticing aromas that fill the air. Local farmers proudly display their bountiful harvest, featuring an impressive variety of seasonal fruits and vegetables. It's the perfect opportunity to stock up on organic, locally sourced ingredients for your culinary adventures or to simply savor the flavors of the region.</p>
+
+                            <p>But the Sandpoint Farmer's Market is not just about the delicious produce. It's a community gathering place where neighbors and friends come together to celebrate the vibrant spirit of the area. Explore the bustling atmosphere, strike up conversations with passionate artisans, and discover unique handmade crafts that reflect the region's rich artistic heritage. The market is also a hub of live entertainment, with talented musicians serenading visitors as they meander through the vibrant stalls.</p>
+                                
+                            <p>By visiting the Sandpoint Farmer's Market, you're not only supporting local vendors and farmers but also contributing to the sustainability and vitality of the community. The market fosters a direct connection between producers and consumers, promoting a sense of transparency and trust. It's a chance to learn about the stories behind the products and forge meaningful connections with the people who make them.</p>
+                        </div>
+                    </div>
+                    <div class="image-card" id="festival">
+                        <source srcset="images/festival-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/festival-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/festival-1200.jpg" alt="Image">
+                        <h3>Sandpoint Summer Festival</h3>
+                        <h1>When?: July 22-24, 2023</h1>
+                        <h1>Where?: Sandpoint Beach Football Stadium, Sandpoint Idaho, 83864</h1>
+                        <div class="image-description">
+                            <p>Prepare yourself for an exhilarating three-day extravaganza at the highly anticipated Sandpoint Summer Festival. This lively event promises non-stop entertainment, creating an atmosphere of pure joy and celebration. Immerse yourself in the captivating melodies of talented local musicians as they take the stage, filling the air with an enchanting symphony of sounds. From soulful ballads to upbeat tunes, the live performances will keep you grooving and singing along throughout the festival.</p>
+
+                            <p>Satisfy your taste buds with a tantalizing array of flavors from the diverse food vendors at the Sandpoint Summer Festival. Indulge in mouthwatering delicacies that range from classic festival treats to international cuisines. Whether you're craving savory delights or sweet temptations, the festival offers a culinary adventure that caters to all palates. Take a culinary journey, savoring each bite as you explore the tempting offerings from the various food stalls.</p>
+                                
+                            <p>The Sandpoint Summer Festival is a family-friendly event with something for everyone. Engage in exciting activities tailored to all ages, ensuring that every member of the family has a memorable experience. From interactive games to engaging workshops, the festival fosters a spirit of fun and togetherness. And as the festival draws to a close, prepare to be dazzled by a grand fireworks display that will illuminate the night sky in a spectacular finale, leaving you with memories to cherish for years to come.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="images/discover3.jpg" alt="Image 3">
-                    <div class="image-overlay">
-                        <h3>Image 3 Description</h3>
+                <div class="news">
+                    <h3>News Releases</h3>
+                    <hr>
+                    <div class="image-card" id="coaster">
+                        <source srcset="images/new-coaster-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/new-coaster-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/new-coaster-1200.jpg" alt="Image of new coaster at theme park">
+                        <h3>New Roller Coaster Coming to Silverwood Theme Park</h3>
+                        <h1>When?: august 16th 2023</h1>
+                        <h1>Where?: Sandpoint's southern neighbor, Athol Idaho, 83864</h1>
+                        <div class="image-description">
+                            <p>Prepare for an exhilarating adventure unlike any other as Silverwood Theme Park introduces its latest attraction, the West Coaster. Brace yourself for a pulse-pounding experience filled with adrenaline, as this thrilling roller coaster takes you on a wild journey through twists, turns, and heart-stopping drops. Get ready to scream, laugh, and hold on tight as you navigate the exhilarating track of the West Coaster.</p>
+
+                            <p>As the newest addition to Silverwood Theme Park's lineup of attractions, the West Coaster promises an unforgettable ride that will leave you craving for more. Feel the rush of excitement as you ascend to towering heights, your anticipation building with each passing moment. Then, prepare for an adrenaline surge as you plummet down steep drops, your heart racing in sync with the coaster's exhilarating speed. The twists and turns will keep you on the edge of your seat, providing an intense and thrilling experience from start to finish.</p>
+
+                            <p>Get ready to unleash your inner thrill-seeker and make your way to Silverwood Theme Park to experience the West Coaster firsthand. This adrenaline-fueled roller coaster promises an unforgettable ride that will leave you breathless and craving for another round. Don't wait any longer—join the excitement, feel the rush, and make memories that will last a lifetime at the West Coaster in Silverwood Theme Park, located in the neighboring town of Athol, Idaho.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="image">
-                    <img src="images/discover4.jpg" alt="Image 4">
-                    <div class="image-overlay">
-                        <h3>Image 4 Description</h3>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="images/discover5.jpg" alt="Image 5">
-                    <div class="image-overlay">
-                        <h3>Image 5 Description</h3>
+                    <div class="image-card" id="coolest">
+                        <source srcset="images/coolest-600.jpg" media="(max-width: 767px)">
+                        <source srcset="images/coolest-1200.jpg" media="(min-width: 1200px)">
+                        <img src="images/placeholder.png" alt="Placeholder Image" data-src="images/coolest-1200.jpg" alt="Image">
+                        <div class="image-description">
+                            <p>Sandpoint, Idaho has recently earned the prestigious recognition of being one of the coolest small towns in the country, according to Matador Network. The selection process involved capturing the essence of what makes a community unique and what ignites that magical small town vibe by listening to the stories of residents and travelers.</p>
+
+                            <p>Sandpoint stood out due to its incredible outdoor adventure opportunities, its proximity to Silverwood, the Northwest's largest theme park, and its picturesque location nestled between three mountain ranges and the stunning Lake Pend Oreille. Despite its small size, Sandpoint surprises visitors with its thriving dining and arts scene, boasting a vibrant main street filled with local restaurants, small businesses, and quirky art galleries.</p>
+                                
+                            <p>With a population of only 8,000 permanent residents, Sandpoint maintains a relaxed and laid-back atmosphere, allowing visitors to truly experience the charm of a close-knit community. The journey to Sandpoint is equally memorable, with scenic byways and mountain ranges adding to its natural beauty. This delightful Idaho town has previously been recognized as "the most beautiful town in America" by USA Today in 2012.</p>
+                                
+                            <p>In summary, Sandpoint exemplifies a truly special community with an abundance of charm and captivating experiences to offer. It is a destination that combines outdoor adventures, proximity to a popular theme park, a thriving dining and arts scene, and a relaxed atmosphere that allows visitors to truly immerse themselves in the town's unique charm.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,5 +212,7 @@
     <script src="scripts/banner.js"></script>
     <script src="scripts/nav-scroll.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/discover-count.js"></script>
 </body>
 </html>

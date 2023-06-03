@@ -492,7 +492,31 @@ section {
 .carousel-slide.active {
     display: block;
 }
-
+.statistics{
+    align-items: center;
+    text-align: center;
+}
+.statistics table {
+    background-color: var(--nav-hover-background-color);
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--nav-hover-background-color);
+    width: 100%;
+}
+.statistics table th {
+    background-color: var(--accent1-color);
+    border: 2px solid;
+    border-color: var(--accent3-color);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.statistics table td {
+    background-color: var(--accent1-color);
+    border: 2px solid;
+    border-color: var(--accent3-color);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 /* Footer design */
 footer {
     display: flex;

@@ -401,10 +401,10 @@ section h2 {
 .discover img {
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
 }
-.discover .gallery .image-card h3{
+.discover .gallery .image-card h1{
     color: var(--accent3-color);
 }
-.discover .gallery .image-card h1{
+.discover .gallery .image-card h2{
     font-size: .8rem;
     color: var(--accent2-color);
 }

@@ -324,7 +324,7 @@ main {
     position: relative;
 }
 main .hero-section {
-    background-image: url('../images/rustymetal.jpg');
+    background-image: url('../images/rusty-metal.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;

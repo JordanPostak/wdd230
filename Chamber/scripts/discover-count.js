@@ -14,7 +14,7 @@ if (previousVisitTimestamp) {
   // Update the designated HTML element with the number of days between visits
   const daysBetweenVisitsElement = document.getElementById('days-between-visits');
   if (daysBetweenVisits === 0) {
-    daysBetweenVisitsElement.textContent = `You last visited us today. Welcome back!`;
+    daysBetweenVisitsElement.textContent = `You last visited us earlier today. Welcome back!`;
   } else {
     daysBetweenVisitsElement.textContent = `You last visited us ${daysBetweenVisits} days ago. Welcome back!`;
   }

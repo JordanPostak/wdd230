@@ -398,7 +398,11 @@ section h2 {
     margin-top: 30px;
   }
   .discover h2 {
+    font-size: 1.2rem;
+  }
+  .discover h1 {
     font-size: 2rem;
+    color: var(--headline-color-on-white);
   }
   .discover .hero h2 {
     font-size: 2rem;

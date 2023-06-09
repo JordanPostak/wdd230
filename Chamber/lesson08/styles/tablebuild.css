@@ -18,7 +18,7 @@ table, td {
 
 table {
     width: 100%;
-    box-shadow: 0 3px 6px rgb(82, 173, 212), 0 3px 6px rgb(69, 69, 69);
+    box-shadow: 0 3px 6px rgb(82, 212, 166), 0 3px 6px rgb(69, 69, 69);
     border-radius: 15px;
     padding: 5px;
 }
@@ -27,7 +27,7 @@ h1, h2, h3{
     background-color: rgb(44, 0, 0);;
     border-radius: 15px;
     padding: 05px;
-    box-shadow: 0 3px 6px rgb(82, 173, 212), 0 3px 6px rgb(69, 69, 69);
+    box-shadow: 0 3px 6px rgb(82, 212, 166), 0 3px 6px rgb(69, 69, 69);
 }
 
 th {

@@ -9,7 +9,7 @@ body {
 }
 
 table, td {
-    border: 1px solid #740202;
+    border: 1px solid #0095ff;
     text-align: center;
     align-items: center;
     text-align: center;
@@ -35,7 +35,7 @@ th {
 }
 
 th[colspan="4"] {
-    color: rgb(49, 162, 255);
+    color: #0095ff;
   }
 
 thead, tfoot {

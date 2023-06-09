@@ -38,6 +38,14 @@ th[colspan="4"] {
     color: #0095ff;
   }
 
+caption {
+  caption-side: bottom;
+  font-size: 0.8em;
+  color: rgb(82, 212, 166);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
 thead, tfoot {
     background-color: #740202;
     color: white;
@@ -58,4 +66,5 @@ th.basic {
 
 tbody tr:nth-child(2) {
     background-color: rgb(44, 0, 0);
+    color: #60b9f8;
 }

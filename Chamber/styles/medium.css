@@ -112,5 +112,37 @@
   .info{
     margin-left: 100px;
   }
-  
+  .join-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .join-devider {
+    display: flex;
+    flex-direction: row;
+}
+
+  .join-page form input,
+  .join-page form select,
+  .join-page form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .join-table {
+    margin-top: 350px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+  }
+  .join-page main {
+    margin-bottom: -100px;
+    margin-top: 100px;
+    }
+  .join-page .join-form {
+    width: 30%;
+  }
+  .join-page .join-form input {
+    width: 100%;
+  }
 }

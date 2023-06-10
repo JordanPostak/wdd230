@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Sandpoint Directory</title>
+    <title>Join Sandpoint Chamber</title>
     <link rel="icon" type="image/ico" href="images/small-sanpoint-icon.ico">
     <script src="scripts/current-date.js"></script>
 </head>
-<body>
+<body class="join-page">
     <header>
         <!-- navbar -->
         <nav id="navbar" class="closed">
@@ -46,39 +46,88 @@
         </nav>
     </header>
     <main>
-        <section class="join-section">
-            <h2>Join the Chamber</h2>
-            <p>Become a member of the Sandpoint Chamber of Commerce and unlock a world of opportunities for your business. Enjoy networking events, promotional opportunities, business resources, and much more.</p>
-            <div class="membership-types">
-                <h3>Membership Types</h3>
-                <ul>
-                    <li>Individual Membership</li>
-                    <li>Small Business Membership</li>
-                    <li>Corporate Membership</li>
-                    <li>Non-profit Membership</li>
-                </ul>
-            </div>
+        <div class="join-devider">
             <div class="join-form">
-                <h3>Fill out the form below to join:</h3>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="membership">Membership Type:</label>
-                    <select id="membership" name="membership" required>
-                        <option value="" selected disabled>Select a membership type</option>
-                        <option value="individual">Individual Membership</option>
-                        <option value="small-business">Small Business Membership</option>
-                        <option value="corporate">Corporate Membership</option>
-                        <option value="non-profit">Non-profit Membership</option>
-                    </select>
-                    <button type="submit">Join Now</button>
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                    </label>
+                
+                    <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                    </label>
+                
+                    <label for="position-title">Business Position Title:
+                    <input type="text" id="position-title" name="position-title" pattern="[A-Za-z -]{7,}" title="Minimum 7 characters, only alphabets, hyphens, and spaces">
+                    </label>
+                
+                    <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </label>
+                
+                    <label for="cell-phone">Cell Phone Number:
+                    <input type="tel" id="cell-phone" name="cell-phone" required>
+                    </label>
+                
+                    <div class="form-group">
+                        <label for="business-name">Business Name/Title:
+                        <input type="text" id="business-name" name="business-name" required>
+                        </label>
+                    
+                        <label for="membership-level">Membership Level:</label>
+                        <div class="select-wrapper">
+                        <select id="membership-level" name="membership-level">
+                            <option value="NP Membership">NP Membership</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="business-description">Business Description:</label>
+                        <textarea id="business-description" name="business-description"></textarea>
+                    </div>
+                
+                    <input type="hidden" name="form-loaded-date" value="">
+                
+                    <input type="submit" value="Join the Chamber" class="join-button">
                 </form>
             </div>
-        </section>
+            <div class="join-table">
+                <table class="membership-level-table">
+                    <caption class="vertical-caption">Membership Level Benefits</caption>
+                    <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Cost</th>
+                        <th>Benefits</th>
+                    </tr>
+                    <tr>
+                        <th class="basic">NP Membership</th>
+                        <td>Free</td>
+                        <td>No fee</td>
+                    </tr>
+                    <tr>
+                        <th class="premium">Bronze Membership</th>
+                        <td>$$</td>
+                        <td>Trainings, advertising</td>
+                    </tr>
+                    <tr>
+                        <th class="deluxe">Silver Membership</th>
+                        <td>$$$</td>
+                        <td>Trainings, advertising, event discounts</td>
+                    </tr>
+                    <tr>
+                        <th class="deluxe">Gold Membership</th>
+                        <td>$$$$</td>
+                        <td>Trainings, advertising, event discounts, more benefits</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="sitespecifics">

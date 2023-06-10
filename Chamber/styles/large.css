@@ -273,4 +273,28 @@ nav.scrolled ul {
  footer {
   width: 108%;
  }
+ .join-page th.middle,
+ .join-page td.middle {
+   width: 100px;
+ }
+ .join-devider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+ }
+
+ .join-pge form {
+  display: flex;
+  flex-direction: column;
+ }
+ .join-table {
+  margin-top: 230px;
+  margin-bottom: 90px;
+  margin-left: 20px;
+}
+.join-page main {
+margin-bottom: -250px;
+}
 }

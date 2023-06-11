@@ -283,8 +283,8 @@ nav.scrolled ul {
   width: 100%;
   grid-column: 2 / 3;
   grid-row: 1 / 4;
+  margin-bottom: 0px;
  }
-
  .join-pge form {
   display: flex;
   flex-direction: column;
@@ -294,7 +294,24 @@ nav.scrolled ul {
   margin-bottom: 90px;
   margin-left: 20px;
 }
-.join-page main {
-margin-bottom: -250px;
+
+.join-thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+.join-thanks h1 {
+  align-self: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.join-thanks p {
+  align-self: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 }

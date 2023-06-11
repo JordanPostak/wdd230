@@ -536,6 +536,8 @@ section {
 .join-devider {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .join-page {
     display: flex;
@@ -574,6 +576,7 @@ section {
     padding: 20px;
     border-radius: 25px;
     margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.53);
   }
   .join-page form textarea {
     flex-basis: 100%;
@@ -658,6 +661,23 @@ section {
     flex-direction: column;
     width: 10%;
 }
+.join-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .join-thanks h1 {
+    align-self: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+  .join-thanks p {
+    align-self: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
 /* Footer design */
 footer {
     display: flex;

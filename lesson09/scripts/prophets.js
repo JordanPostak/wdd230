@@ -14,7 +14,10 @@ function displayProphets(prophets) {
   cards.innerHTML = ''; // Clear existing cards
 
   prophets.forEach(prophet => {
-    if (!isFilterActive || (isFilterActive && parseInt(prophet.length) >= 10)) {
+    if (
+      (!isFilterActive || (isFilterActive && parseInt(prophet.length) >= 10)) &&
+      (!numChildrenButton.classList.contains('active') || prophet.numofchildren > 5)
+    ) {
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let portrait = document.createElement('img');
@@ -53,19 +56,30 @@ function displayProphets(prophets) {
 
 const noFilterButton = document.getElementById('no-filter-button');
 const overDecadeButton = document.getElementById('over-decade-button');
+const numChildrenButton = document.getElementById('num-children-button');
 
 noFilterButton.addEventListener('click', () => {
   isFilterActive = false; // Turn off the filter
-  noFilterButton.disabled = true; // Disable the button
-  overDecadeButton.disabled = false; // Enable the button
+  overDecadeButton.classList.remove('active'); // Remove active style
+  numChildrenButton.classList.remove('active'); // Remove active style
+  noFilterButton.classList.add('active'); // Apply active style
   displayProphets(prophetsData);
 });
 
 overDecadeButton.addEventListener('click', () => {
   isFilterActive = true; // Turn on the filter
-  noFilterButton.disabled = false; // Enable the button
-  overDecadeButton.disabled = true; // Disable the button
+  noFilterButton.classList.remove('active'); // Remove active style
+  numChildrenButton.classList.remove('active'); // Remove active style
+  overDecadeButton.classList.add('active'); // Apply active style
   displayProphets(prophetsData);
+});
+
+numChildrenButton.addEventListener('click', () => {
+  isFilterActive = true; // Turn on the filter
+  noFilterButton.classList.remove('active'); // Remove active style
+  overDecadeButton.classList.remove('active'); // Remove active style
+  numChildrenButton.classList.add('active'); // Apply active style
+  displayProphets(prophetsData.filter(prophet => prophet.numofchildren > 5));
 });
 
 function getOrdinalNumber(number) {
@@ -73,12 +87,6 @@ function getOrdinalNumber(number) {
   const suffix = number % 10 < 4 && (number % 100 < 10 || number % 100 >= 20) ? suffixes[number % 10] : suffixes[0];
   return suffix;
 }
-
-function getCurrentAge(birthdate) {
-    const birthYear = new Date(birthdate).getFullYear();
-    const currentYear = new Date().getFullYear();
-    return currentYear - birthYear;
-  }
   
   function getAgeAtDeath(birthdate, deathdate) {
     const birthYear = new Date(birthdate).getFullYear();

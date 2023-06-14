@@ -394,7 +394,50 @@ main .hero-message h2 {
 section h2 {
     font-size: 1.5rem;
 }
-
+/*Directory page*/
+.directory-section {
+    justify-content: center;
+    text-align: center;
+}
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .view-btn {
+    font-size: 24px;
+    padding: 0;
+    margin: 0 10px;
+  }
+  .view-btn img{
+    border-radius: 0;
+    margin: 0;
+  }
+.list-view {
+    background-color: var(--nav-hover-background-color);
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.56), 0 3px 6px rgba(0,0,0,0.73);
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.list-view a, .icon-view a{
+    color: var(--nav-hover-background-color);
+}
+.list-view li {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0px;
+  }
+  
+  .list-view .even {
+    background-color: #aac9e4;
+  }
+  
+  .list-view .odd {
+    background-color: #b9def5;
+  }
 /*Discover page*/
 .discover h3 {
     margin-top: 30px;

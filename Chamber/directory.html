@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Directory for local businesses in Sandpoint, Idaho">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <!-- Phone-Default -->
+	<link rel="stylesheet" href="styles/base.css">
+    <!-- enhance-tablet -->
+	<link rel="stylesheet" href="styles/medium.css">
+    <!-- enhance-desktop -->
+	<link rel="stylesheet" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Sandpoint Directory</title>
     <link rel="icon" type="image/ico" href="images/small-sanpoint-icon.ico">
     <script src="scripts/current-date.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -47,14 +51,19 @@
     <main>
         <section class="directory-section">
             <h2>Sandpoint Directory</h2>
-            <div class="directory-list">
-                <ul>
-                    <li>Business 1</li>
-                    <li>Business 2</li>
-                    <li>Business 3</li>
-                    <li>Business 4</li>
-                    <li>Business 5</li>
-                </ul>
+            <div class="view-buttons">
+                <button id="listViewBtn" class="view-btn">
+                  <img src="images/list-icon.png" alt="List View Icon">
+                </button>
+                <button id="iconViewBtn" class="view-btn">
+                  <img src="images/icon-view-icon.png" alt="Icon View Icon">
+                </button>
+            </div>
+            <div id="businessList" class="list-view">
+                <!-- List view content -->
+            </div>
+            <div id="businessIcons" class="icon-view">
+                <!-- Icon view content -->
             </div>
         </section>
     </main>
@@ -85,5 +94,6 @@
       </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/nav-scroll.js"></script>
+    <script src="scripts/businesses.js"></script>
 </body>
 </html>

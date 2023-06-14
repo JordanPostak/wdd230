@@ -169,4 +169,22 @@
     justify-content: center;
     font-size: 1.5rem;
   }
+  /* Directory page */
+.icon-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+  .join-card {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+  }
+  .join-card {
+    flex-basis: calc(33.33% - 20px);
+  }
 }

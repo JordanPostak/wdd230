@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Artistic Adventures",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "website": "https://www.artisticadventures.com",
+        "image": "images/artistic_adventures.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Whimsical Boutique",
+        "address": "789 Oak St",
+        "phone": "555-555-5555",
+        "website": "https://www.whimsicalboutique.com",
+        "image": "images/whimsical_boutique.jpg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Surreal Sweets",
+        "address": "246 Maple Ave",
+        "phone": "555-123-4567",
+        "website": "https://www.surrealsweets.com",
+        "image": "images/surreal_sweets.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Imagination Station",
+        "address": "789 Elm St",
+        "phone": "987-654-3210",
+        "website": "https://www.imaginationstation.com",
+        "image": "images/imagination_station.jpg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Dreamy Delights",
+        "address": "321 Oak St",
+        "phone": "555-789-1234",
+        "website": "https://www.dreamydelights.com",
+        "image": "images/dreamy_delights.jpg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Whispering Woods",
+        "address": "567 Pine Ln",
+        "phone": "555-222-3333",
+        "website": "https://www.whisperingwoods.com",
+        "image": "images/whispering_woods.jpg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Enchanted Eateries",
+        "address": "789 Cedar Rd",
+        "phone": "555-444-5555",
+        "website": "https://www.enchantedeateries.com",
+        "image": "images/enchanted_eateries.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Magical Moments",
+        "address": "123 Willow Ave",
+        "phone": "555-666-7777",
+        "website": "https://www.magicalmoments.com",
+        "image": "images/magical_moments.jpg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Fantastic Florals",
+        "address": "456 Rose St",
+        "phone": "555-888-9999",
+        "website": "https://www.fantasticflorals.com",
+        "image": "images/fantastic_florals.jpg",
+        "membershipLevel": "Silver"
+      }
+    ]
+  }

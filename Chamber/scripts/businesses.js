@@ -7,11 +7,13 @@ $(document).ready(function() {
         var listItem = $('<li>').addClass(index % 2 === 0 ? 'even' : 'odd');
         
         // Create a span for the business information
-        var infoSpan = $('<span>').html(
-            business.name + '<br>' +
-            business.address + '<br>' +
-            business.phone + '<br>' +
-            '<a href="' + business.website + '">' + business.website + '</a>'
+        var infoSpan = $('<span>').addClass('business-info').append(
+          $('<span>').addClass('business-name').text(business.name + ':'),
+          $('<span>').addClass('business-address').text(business.address),
+          $('<span>').addClass('business-phone').text(business.phone),
+          $('<span>').addClass('business-website').append(
+            $('<a>').attr('href', business.website).text(business.website)
+          )
         );
         
         // Append the span to the list item
@@ -32,10 +34,11 @@ $(document).ready(function() {
     
         // Create a paragraph for the business information
         var infoPara = $('<p>').html(
-            'Address: ' + business.address + '<br>' +
-            'Phone: ' + business.phone + '<br>' +
+            '<b>' + business.name + '</b>' + ':' + '<br>' + '<br>' +
+            business.address + '<br>' +
+            business.phone + '<br>' +
             'Membership Level: ' + business.membershipLevel + '<br>' +
-            '<a href="' + business.website + '">Learn More</a>'
+            '<a href="' + business.website + '">Webstite</a>'
         );
         detailsDiv.append(infoPara);
     

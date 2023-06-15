@@ -409,6 +409,12 @@ section h2 {
     font-size: 24px;
     padding: 0;
     margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent4-color);
+  }
+  .view-btn:hover{
+    transform: scale(1.2);
   }
   .view-btn img{
     border-radius: 0;
@@ -437,6 +443,14 @@ section h2 {
   
   .list-view .odd {
     background-color: #b9def5;
+  }
+  .business-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .business-name {
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 /*Discover page*/
 .discover h3 {

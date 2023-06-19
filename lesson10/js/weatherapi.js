@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 const apiKey = '15cceac47631850b455872b6c555a9ef';
-const url = `http://api.openweathermap.org/data/2.5/weather?q=Fairbanks,us&appid={apiKey}`;
+const url = `http://api.openweathermap.org/data/2.5/weather?q=Fairbanks,us&appid=${apiKey}`;
 
 // defined asynchronous function to fetch data from the API
 async function apiFetch() {

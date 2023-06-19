@@ -12,21 +12,39 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      console.log(data); 
 
-      // Capitalize each word of the weather description
-      const capitalizedDesc = data.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+      // Extract relevant information from the data object
+      const temperatureKelvin = data.main.temp;
+      const temperatureFahrenheit = convertKelvinToFahrenheit(temperatureKelvin);
+      const weatherDescription = capitalizeWords(data.weather[0].description); // Capitalize the weather description
+      const iconCode = data.weather[0].icon;
 
-      // Update the HTML elements with the data
-      currentTemp.textContent = data.main.temp.toFixed(2);
-      weatherIcon.setAttribute('src', `http://openweathermap.org/img/w/${data.weather[0].icon}.png`);
-      captionDesc.textContent = capitalizedDesc;
+      // Update HTML elements with the retrieved data
+      currentTemp.textContent = `${temperatureFahrenheit.toFixed(2)} °F`;
+      weatherIcon.src = `http://openweathermap.org/img/w/${iconCode}.png`;
+      captionDesc.textContent = weatherDescription;
     } else {
       throw Error(await response.text());
     }
   } catch (error) {
     console.log(error);
   }
+}
+
+function capitalizeWords(sentence) {
+  const words = sentence.split(' ');
+  const capitalizedWords = words.map(word => {
+    const firstLetter = word.charAt(0).toUpperCase();
+    const restOfWord = word.slice(1);
+    return firstLetter + restOfWord;
+  });
+  return capitalizedWords.join(' ');
+}
+
+// Helper function to convert temperature from Kelvin to Fahrenheit
+function convertKelvinToFahrenheit(temperatureKelvin) {
+  return (temperatureKelvin - 273.15) * 9 / 5 + 32;
 }
 
 apiFetch();

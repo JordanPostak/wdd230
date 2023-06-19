@@ -22,7 +22,7 @@ async function apiFetch() {
 
       // Update HTML elements with the retrieved data
       currentTemp.textContent = `${temperatureFahrenheit.toFixed(2)} °F`;
-      weatherIcon.src = `http://openweathermap.org/img/w/${iconCode}.png`;
+      weatherIcon.src = `https://openweathermap.org/img/w/${iconCode}.png`;
       captionDesc.textContent = weatherDescription;
     } else {
       throw Error(await response.text());

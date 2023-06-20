@@ -87,13 +87,17 @@
                 <h2>Weather</h2>
                 <hr>
                 <div class="weather-card">
-                    <img src="images//weather-sunny.png" alt="Weather Icon">
-                    <h3>Today's Weather</h3>
-                    <p>Temperature: <span id="temperature">50</span>°F</p>
-                    <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
-                    <p>Wind Chill: <span id="wind-chill"></span></p>
+                  <h3 id="weathertoday">Today's Weather</h3>
+                  <div class="icon-temp">
+                    <img src="images//weather-sunny.png" alt="Weather Icon" id="weather-icon">
+                    <h3 id="temperature"><span id="temp">60</span>°F</h3>
+                  </div>
+                  <h3><span id="weather-condition">Sunny</span></h3>
+                  <hr>
+                  <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                  <p>Wind Chill: <span id="wind-chill"></span></p>
                 </div>
-            </section>
+              </section>
         </div>
         <section class="news-section">
             <h2>News Releases</h2>
@@ -176,5 +180,6 @@
       <script src="scripts/banner.js"></script>
       <script src="scripts/nav-scroll.js"></script>
       <script src="scripts/windchill.js"></script>
+      <script src="scripts/weather.js"></script>
     </body>
 </html>

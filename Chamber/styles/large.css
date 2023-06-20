@@ -65,6 +65,11 @@ nav.scrolled ul li a {
 nav.scrolled ul {
   float: left;
 } 
+nav.scrolled .banner {
+position: fixed;
+margin-top: 6rem;
+margin-left: 40rem;
+}
   .facebook-logo img, .linkedin-logo img{
     height: 30px;
   }
@@ -153,7 +158,7 @@ nav.scrolled ul {
     grid-template-rows: 2fr 1fr;
     flex-direction: column;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 2;
     width: 100%;
   }
   .event-card, .weather-card{
@@ -294,7 +299,6 @@ nav.scrolled ul {
   margin-bottom: 90px;
   margin-left: 20px;
 }
-
 .join-thanks {
   display: flex;
   flex-direction: column;

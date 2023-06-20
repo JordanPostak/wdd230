@@ -524,6 +524,36 @@ section {
     width: 50px;
     height: 50px;
 }
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#weather-condition {
+    font-size: 1.5rem;
+}
+.weather-card hr {
+    height: 1px;
+}
+#weather-icon {
+    width: 120px;
+    height: 120px;
+}
+#weathertoday{
+    font-size: 1.5rem;
+    color: var(--);
+}
+#temperature, #temp {
+    font-size: 2rem;
+}
+.icon-temp {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 .join-section {
     display: none;
 }

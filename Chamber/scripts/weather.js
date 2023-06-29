@@ -37,4 +37,4 @@ function capitalizeFirstLetter(string) {
   return string.replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
-apiFetch();
+apiFetch(); 

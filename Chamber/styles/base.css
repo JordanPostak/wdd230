@@ -420,7 +420,7 @@ section h2 {
     padding: 5px;
     padding-top: 10px;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
     background-color: var(--accent4-color);
     transition: 0.5s;
     border-radius: 50px;

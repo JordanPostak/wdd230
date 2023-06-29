@@ -132,11 +132,10 @@
     width: 100%;
     margin-bottom: 10px;
   }
-
   .join-table {
-    margin-top: 400px;
+    margin-top: 580px;
     margin-bottom: 80px;
-    margin-left: 80px;
+    margin-left: 130px;
   }
   .join-page main {
     margin-bottom: -100px;
@@ -183,29 +182,15 @@
   margin-left: -20px;
   margin-right: -20px;
 }
-.icon-view .join-card {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
-  }
-  .icon-view .join-card {
-    flex-basis: calc(33.33% - 20px);
-  }
-  .list-view li {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .list-view li span {
-    flex-basis: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
-
 .list-view li .business-name,
 .list-view li .business-address {
     flex-basis: 50%;
 }
-
 .list-view li .business-phone,
 .list-view li .business-website {
     flex-basis: 100%;
@@ -216,12 +201,10 @@
   grid-gap: 15px;
   justify-content: left;
 }
-
 .business-info .business-name,
 .business-info .business-address {
   grid-row: 1;
 }
-
 .business-info .business-phone,
 .business-info .business-website {
   grid-row: 2;
@@ -232,14 +215,10 @@
   justify-content: left;
   padding-left: 20px;
 }
-.business-info .business-phone {
-  padding-left: 30px;
-}
 .business-info .business-address,
 .business-info .business-website {
   display: flex;
   justify-content: left;
   padding-top: 4px;
-  padding-left: 20px;
 }
 }

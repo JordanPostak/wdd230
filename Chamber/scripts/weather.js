@@ -14,13 +14,13 @@ async function apiFetch() {
       console.log(data);
 
       // Extract relevant information from the data object
-      const temperature = data.main.temp;
-      const windSpeed = data.wind.speed;
+      const temperature = Math.round(data.main.temp);
+      const windSpeed = Math.round(data.wind.speed);
       const iconCode = data.weather[0].icon;
       const condition = capitalizeFirstLetter(data.weather[0].description);
 
       // Update HTML elements with the retrieved data
-      document.getElementById('temperature').textContent = temperature;
+      document.getElementById('temperature').innerHTML = `${temperature}&deg;F`;
       document.getElementById('wind-speed').textContent = windSpeed;
       conditionElement.textContent = condition;
       weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;

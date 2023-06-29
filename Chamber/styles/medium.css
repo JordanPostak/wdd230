@@ -209,7 +209,7 @@
   justify-content: left;
 }
 .business-info .business-name,
-.business-info .business-address {
+.business-info .business-address { 
   grid-row: 1;
 }
 .business-info .business-phone,

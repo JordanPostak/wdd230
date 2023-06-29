@@ -345,7 +345,7 @@ margin-left: 40rem;
   
 }
 .icon-view .join-card {
-  flex-basis: 20%;
+  flex-basis: 20%; 
   box-sizing: border-box;
   margin-bottom: -40px;
 }

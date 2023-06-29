@@ -28,7 +28,7 @@ async function apiFetch() {
       throw Error(await response.text());
     }
   } catch (error) {
-    console.log('An error occurred while fetching weather data:', error);
+    console.log('An error occurred while fetching weather data:', error); 
   }
 }
 

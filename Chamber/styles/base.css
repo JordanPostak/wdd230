@@ -332,6 +332,7 @@ main {
     position: relative;
 }
 main .hero-section {
+    background-color: var(--nav-hover-background-color);
     background-image: url('../images/rusty-metal.jpg');
     background-size: cover;
     background-position: center;

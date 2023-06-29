@@ -713,7 +713,7 @@ section {
 }
 form #business-description {
     width: 100% !important;
-    min-height: 80px;
+    min-height: 100px;
   }
 .join-page form #email,
 .join-page form #business-name {

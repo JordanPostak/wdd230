@@ -340,7 +340,7 @@ margin-left: 40rem;
 }
 .business-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Specify four equal columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   
 }
@@ -380,5 +380,7 @@ margin-left: 40rem;
   text-align: center;
   grid-column: 2 / 3;
   grid-row: 2 / 4;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 }

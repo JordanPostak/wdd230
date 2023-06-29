@@ -331,7 +331,7 @@ margin-left: 40rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  align-content: flex-start;
+  align-content: flex-start; 
   text-align: center;
   margin-left: -20px;
   margin-right: -20px;

@@ -25,7 +25,7 @@ async function apiFetch() {
       conditionElement.textContent = condition;
       weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
     } else {
-      throw Error(await response.text());
+      throw Error(await response.text()); 
     }
   } catch (error) {
     console.log('An error occurred while fetching weather data:', error);

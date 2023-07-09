@@ -10,6 +10,13 @@
         --color-accent4: #ffffffff;
         --color-accent5: rgb(143, 143, 143);
 
+        --postit-color1: #ffb6b9; /* pastel pink */
+        --postit-color2: #ffa07a; /* pastel salmon */
+        --postit-color3: #ffd700; /* pastel gold */
+        --postit-color4: #98fb98; /* pastel green */
+        --postit-color5: #add8e6; /* pastel blue */
+        --postit-color6: #d8bfd8; /* pastel purple */
+
         --color-gradient: linear-gradient(to right, var(--color-accent2), var(--color-accent2), var(--color-accent3));
 
         --border-color-gradient: linear-gradient(to right, var(--color-accent2), var(--color-accent2), var(--color-accent3)) 1;
@@ -24,6 +31,7 @@
         --font-subheading: 'Syncopate', sans-serif;
         --font-paragraph: 'Roboto', sans-serif;
         --font-card-paragraph: 'Walter Turncoat', cursive;
+        --font-postit-paragraph: 'Reenie Beanie', cursive;
     }
 /*body*/
     body {
@@ -47,7 +55,7 @@
         text-decoration: none;
     }
     h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-family: var(--font-heading);
         color: var(--color-accent3);
     }
@@ -61,7 +69,20 @@
         box-shadow: var(--box-shadow);
       }
     h2 {
+        font-size: 2rem;
         color: var(--color-accent2);
+    }
+    h3 {
+        font-size: 1rem;
+        font-family: var(--font-paragraph);
+    }
+    h4 {
+        font-size: 1rem;
+        font-family: var(--font-paragraph);
+        color: var(--color-secondary);
+        font-weight: lighter;
+        font-style: italic;
+        margin-top: auto;
     }
     ul {
         margin-top: 15px;
@@ -124,7 +145,6 @@
     }
     footer {
         margin-top: -250px;
-        transition: transform 0.7s ease;
     }
     .footer-up {
         margin-top: 0px;
@@ -142,6 +162,12 @@
     .button-bar {
         background-color: var(--color-primary);
         box-shadow: var(--box-shadow-inverted);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .button-bar-title {
+        width: 100%;
     }
     /*hamburger*/
     .hamburger {
@@ -162,6 +188,14 @@
         box-shadow: var(--box-shadow);
         position: absolute;
         transition: transform 0.7s ease;
+    }
+    .hamburger.arrive .line:first-child {
+        transform: rotate(45deg);
+        top: 43%;
+    }
+    .hamburger.arrive .line:last-child {
+        transform: rotate(-45deg);
+        bottom: 43%;
     }
     .hamburger .line:first-child {
         top: 0;
@@ -204,7 +238,7 @@
         margin-bottom: 25px;
     }
     main {
-        transform: translateY(-11%);
+        transform: translateY(-9%);
         transition: transform 0.7s ease;
     }
     .main-up {
@@ -216,7 +250,7 @@
         margin-bottom: 20px;
         background-color: var(--color-primary);
         background-image: url('../images/chalkboard.png');
-        background-size: contain;
+        background-size: 100% auto;
         background-repeat: repeat-y;
         background-position: center;
         border-width: 6px;
@@ -224,7 +258,7 @@
         border-image: var(--border-color-gradient);
         box-shadow: var(--box-shadow-inverted), var(--box-shadow);
         width: 85%;
-        padding-left: 20px;
+        padding-left: 25px;
         padding-right: 20px;
     }
     .card p {
@@ -234,3 +268,48 @@
         font-family: var(--font-card-paragraph);
         text-align: left;
     }
+
+    .postit1, .postit2, .postit3, .postit4, .postit5, .postit6 {
+        margin: 15px;
+        text-shadow: none;
+        font-family: var(--font-postit-paragraph);
+        color: var(--color-accent1);
+        width: 100px;
+        height: 100px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .postit1:hover, .postit2:hover, .postit3:hover, .postit4:hover, .postit5:hover, .postit6:hover {
+        transform: scale(1.05) rotate(0deg);
+        box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .postit1 {
+        background-color: var(--postit-color5);
+        transform: rotate(-3deg);
+      }
+      .postit2 {
+        background-color: var(--postit-color1);
+        transform: rotate(5deg);
+      }
+      .postit3 {
+        background-color: var(--postit-color3);
+        transform: rotate(-2deg);
+      }
+      .postit4 {
+        background-color: var(--postit-color6);
+        transform: rotate(2deg);
+      }
+      .postit5 {
+        background-color: var(--postit-color2);
+        transform: rotate(-4deg);
+      }
+      .postit6 {
+        background-color: var(--postit-color4);
+        transform: rotate(3deg);
+      }

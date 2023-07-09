@@ -10,3 +10,10 @@ hamburger.addEventListener('click', function() {
   mainSection.classList.toggle('main-up');
   footerSection.classList.toggle('footer-up');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  hamburger.classList.add('arrive');
+  setTimeout(function() {
+    hamburger.classList.remove('arrive');
+  }, 0);
+});

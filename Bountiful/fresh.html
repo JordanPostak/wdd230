@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Bountiful Foods website project for Jordan Postak in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syncopate:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/bf-icon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
 	<title>Bountiful Foods</title>
     <!-- phone-default -->
 	<link rel="stylesheet" href="styles/base.css">
@@ -12,17 +16,84 @@
 	<link rel="stylesheet" href="styles/medium.css">
     <!-- desktop -->
 	<link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/ico" href="">
 </head>
 <body>
     <header>
-
+        <div class="title-block">
+            <a href="images/bountiful-foods-logo-1280.png" target="_blank" class="logo">
+                <img src="images/bountiful-foods-logo-300.png" alt="Bountiful Foods logo">
+            </a>
+            <div id="date">current date</div>
+        </div>
+        <hr>
+        <nav>
+            <div class="button-bar">
+                <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                </div>
+            </div>
+            <hr>
+            <div class="nav-closed">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <main>
-
+        <div class="card">
+            <h1>Fresh Page</h1>
+        </div>
+        <div class="card">
+            <div class="postit1">title</div>
+            <p>info</p>
+        </div>
+        <div class="card">
+            <div class="postit3">title</div>
+            <p>info</p>
+        </div>
+        <div class="card">
+            <div class="postit4">title</div>
+            <p>info</p>
+        </div>
+        <div class="card">
+            <div class="postit5">title</div>
+            <p>info</p>
+        </div>
+        <div class="card">
+            <div class="postit6">title</div>
+            <p>info</p>
+        </div>
     </main>
+    <hr>
     <footer>
-
+        <div class="footer-display">
+            <a href="" class="logo">
+                <img src="images/bf-icon.png" alt="Bountiful Foods logo">
+            </a>
+        </div>
+        <div class="footer-general-info">
+            <div>
+                <h2>Bountiful Foods</h2>
+                <h3>23 Catalina Drive<br>Laguna Beach<br>California 92651</h3>
+            </div>
+            <div class="footer-contact-info">
+                <hr>
+                <h4>info@bountifulfoods.com</h4>
+                <h4>+(949) 999-9999</h4>
+            </div>
+        </div>
+        <div class="footer-project-info"> 
+            <hr>
+            <p>&copy; <span id="year"></span>&nbsp;Bountiful Foods&nbsp;</p>
+            <p><b>&nbsp;Jordan Postak&nbsp;</b></p><p>&nbsp;WDD 230 Project&nbsp;</p>
+            <p class="last-modified">&nbsp;<em><span id="lastModified">last modified: never</span></em>&nbsp;</p>
+        </div>
       </footer>
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/current-date.js"></script>
     </body>
 </html> 

@@ -6,7 +6,7 @@
         --color-secondary:#f1c232ff;
         --color-accent1: #000000ff;
         --color-accent2: #ff9900ff;
-        --color-accent3: #ffff00ff;
+        --color-accent3: rgb(255, 213, 0);
         --color-accent4: #ffffffff;
         --color-accent5: rgb(143, 143, 143);
 
@@ -23,6 +23,7 @@
         --font-heading: 'Syncopate', sans-serif;
         --font-subheading: 'Syncopate', sans-serif;
         --font-paragraph: 'Roboto', sans-serif;
+        --font-card-paragraph: 'Walter Turncoat', cursive;
     }
 /*body*/
     body {
@@ -111,6 +112,23 @@
         background-color: var(--color-accent1);
         font-size: 1rem;
     }
+    footer img {
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+    footer .last-modified {
+        color: var(--color-accent3);
+    }
+    footer h2 {
+        color: var(--color-accent3);
+    }
+    footer {
+        margin-top: -250px;
+        transition: transform 0.7s ease;
+    }
+    .footer-up {
+        margin-top: 0px;
+    }
     /*Navigation*/
     /*Nav Background*/
     nav {
@@ -180,11 +198,39 @@
     }
 /*Main Section*/
     main {
+        padding-left: 20px;
+        padding-right: 20px;
         margin-top: 25px;
         margin-bottom: 25px;
-        transform: translateY(-150%);
+    }
+    main {
+        transform: translateY(-11%);
         transition: transform 0.7s ease;
     }
     .main-up {
         transform: translateY(0%);
+    }
+    .card {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: var(--color-primary);
+        background-image: url('../images/chalkboard.png');
+        background-size: contain;
+        background-repeat: repeat-y;
+        background-position: center;
+        border-width: 6px;
+        border-style: solid;
+        border-image: var(--border-color-gradient);
+        box-shadow: var(--box-shadow-inverted), var(--box-shadow);
+        width: 85%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card p {
+        color: var(--color-accent4);
+        text-shadow: none;
+        font-size: 1.5rem;
+        font-family: var(--font-card-paragraph);
+        text-align: left;
     }

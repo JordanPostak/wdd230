@@ -6,8 +6,9 @@
 	<meta name="description" content="Bountiful Foods website project for Jordan Postak in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syncopate:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="images/bf-icon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
 	<title>Bountiful Foods</title>
     <!-- phone-default -->
 	<link rel="stylesheet" href="styles/base.css">
@@ -15,7 +16,6 @@
 	<link rel="stylesheet" href="styles/medium.css">
     <!-- desktop -->
 	<link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/ico" href="">
 </head>
 <body>
     <header>
@@ -23,6 +23,7 @@
             <a href="images/bountiful-foods-logo-1280.png" target="_blank" class="logo">
                 <img src="images/bountiful-foods-logo-300.png" alt="Bountiful Foods logo">
             </a>
+            <div id="date">current date</div>
         </div>
         <hr>
         <nav>
@@ -43,8 +44,28 @@
           </nav>
     </header>
     <main>
-        <div>
-            <h2>This is the main content</h2>
+        <div class="card">
+            <h2>Welcome!</h2>
+            <p>We are your one-stop shop for premium organic groceries.</p>
+            <p>Located in the scenic coastal town of Laguna Beach, California, our dedicated team is ready to assist you. :)</p>
+            <p>Contact us today at info@bountifulfoods.com or give us a call at (949) 999-9999 to discover a world of organic goodness!</p>
+        </div>
+        <div class="card">
+            <h2>Create a Mix</h2>
+            <p>Get creative with our refreshing fruit drink mixes! Whether you're craving a tropical blend or a tangy burst of flavors, our 'Fresh' page offers a variety of options to create your perfect thirst-quencher.</p>
+            <p> Mix and match your favorite fruits to design a customized drink that suits your taste buds. Explore our fresh page and start concocting your own delicious and healthy beverages today!</p>
+        </div>
+        <div class="card">
+            <h2>Your Mixes</h2>
+            <p>Here are all your mixes</p>
+        </div>
+        <div class="card">
+            <h2>Laguna Beach</h2>
+            <p>As you explore our site, immerse yourself in the stunning coastal vibes of Laguna Beach, Orange County. Discover the beauty of this renowned destination while enjoying the delightful flavors crafted by our community.</p>
+        </div>
+        <div class="card">
+            <h2>Weather</h2>
+            <p>Weather info</p>
         </div>
     </main>
     <hr>
@@ -63,17 +84,13 @@
                 <hr>
                 <h4>info@bountifulfoods.com</h4>
                 <h4>+(949) 999-9999</h4>
-                <a href="https://goo.gl/maps/FUHxbpUxcvCtns8L8" target="_blank" class="location">
-                    <img src="images/small-pin.png" alt="Map pin logo">Location Map
-                </a>
             </div>
         </div>
-        <br>
         <div class="footer-project-info"> 
             <hr>
             <p>&copy; <span id="year"></span>&nbsp;Bountiful Foods&nbsp;</p>
             <p><b>&nbsp;Jordan Postak&nbsp;</b></p><p>&nbsp;WDD 230 Project&nbsp;</p>
-            <p class="lasttext">&nbsp;<em><span id="lastModified">last modified: never</span></em>&nbsp;</p>
+            <p class="last-modified">&nbsp;<em><span id="lastModified">last modified: never</span></em>&nbsp;</p>
         </div>
       </footer>
       <script src="scripts/hamburger.js"></script>

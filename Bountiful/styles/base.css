@@ -317,26 +317,32 @@
         box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3);
     }
       .postit1 {
+        margin-left: 45px;
         background-color: var(--postit-color5);
         transform: rotate(-3deg);
     }
       .postit2 {
+        margin-left: 65px;
         background-color: var(--postit-color1);
         transform: rotate(5deg);
     }
       .postit3 {
+        margin-left: 15px;
         background-color: var(--postit-color3);
         transform: rotate(-2deg);
     }
       .postit4 {
+        margin-left: 35px;
         background-color: var(--postit-color6);
         transform: rotate(2deg);
     }
       .postit5 {
+        margin-left: 75px;
         background-color: var(--postit-color2);
         transform: rotate(-4deg);
     }
       .postit6 {
+        margin-left: 25px;
         background-color: var(--postit-color4);
         transform: rotate(3deg);
     }

@@ -283,33 +283,67 @@
         padding: 20px;
         box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s, box-shadow 0.3s;
-      }
+    }
       .postit1:hover, .postit2:hover, .postit3:hover, .postit4:hover, .postit5:hover, .postit6:hover {
         transform: scale(1.05) rotate(0deg);
         box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3);
-      }
-
+    }
       .postit1 {
         background-color: var(--postit-color5);
         transform: rotate(-3deg);
-      }
+    }
       .postit2 {
         background-color: var(--postit-color1);
         transform: rotate(5deg);
-      }
+    }
       .postit3 {
         background-color: var(--postit-color3);
         transform: rotate(-2deg);
-      }
+    }
       .postit4 {
         background-color: var(--postit-color6);
         transform: rotate(2deg);
-      }
+    }
       .postit5 {
         background-color: var(--postit-color2);
         transform: rotate(-4deg);
-      }
+    }
       .postit6 {
         background-color: var(--postit-color4);
         transform: rotate(3deg);
-      }
+    }
+      .polaroid1, .polaroid2, .polaroid3 {
+        margin: 25px;
+        text-shadow: none;
+        font-family: var(--font-postit-paragraph);
+        color: var(--color-accent1);
+        width: 250px;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+      .polaroid1 img, .polaroid2 img, .polaroid3 img {
+      width:98%;
+      margin-bottom: 30px;
+    }
+      .polaroid1:hover, .polaroid2:hover, .polaroid3:hover {
+        transform: scale(1.05) rotate(0deg);
+        box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3);
+    }
+      .polaroid1 {
+        background-color: var(--color-accent4);
+        transform: rotate(-3deg);
+    }
+      .polaroid2 {
+        background-color: var(--color-accent4);
+        transform: rotate(5deg);
+    }
+      .polaroid3 {
+        background-color: var(--color-accent4);
+        transform: rotate(-2deg);
+    }

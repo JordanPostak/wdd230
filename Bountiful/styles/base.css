@@ -152,9 +152,9 @@
     /*Scroll Up Button*/
     #scrollToTopBtn {
         position: fixed;
-        bottom: 1px;
-        right: 1px;
-        background-color: transparent;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.0);
         border: none;
         border-radius: 50px;
         cursor: pointer;

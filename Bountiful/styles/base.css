@@ -28,7 +28,7 @@
 
         /*fonts*/
         --font-heading: 'Syncopate', sans-serif;
-        --font-subheading: 'Syncopate', sans-serif;
+        --font-subheading: 'Roboto', sans-serif;
         --font-paragraph: 'Roboto', sans-serif;
         --font-card-paragraph: 'Walter Turncoat', cursive;
         --font-postit-paragraph: 'Reenie Beanie', cursive;
@@ -265,7 +265,7 @@
         margin-bottom: 25px;
     }
     main {
-        transform: translateY(-9%);
+        transform: translateY(-7.5%);
         transition: transform 0.7s ease;
     }
     .main-up {
@@ -385,5 +385,22 @@
         margin-left: -10px;
         background-color: var(--color-accent4);
         transform: rotate(-3deg);
+    }
+    .picture-frame {
+        width: 80%;
+        margin-top: 0px;
+        margin: 20px auto;
+        margin-top: 10px;
+        border: 35px solid transparent;
+        border-image-source: url(../images/picture-frame.jpg);
+        border-image-slice: 46 49;
+        border-image-repeat: round;
+        transition: .4s all ease-in-out;
+        box-shadow: var(--box-shadow-inverted), var(--box-shadow);
+    }
+    
+    .picture-frame:hover {
+        transform: rotate(-2deg);
+          
     }
 

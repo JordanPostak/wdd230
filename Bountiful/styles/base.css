@@ -121,6 +121,7 @@
     select:focus {
         outline: none;
     }
+    
 /* Header/Footer Design*/
     header, footer {
         display: flex;
@@ -160,20 +161,23 @@
     #scrollToTopBtn {
         position: fixed;
         bottom: 10px;
-        right: 10px;
+        right: -10px;
         background-color: rgba(0,0,0,0.0);
         border: none;
         border-radius: 50px;
         cursor: pointer;
-        font-size: 18px;
         line-height: 48px;
-        width: 48px;
         padding: 10px;
         opacity: 0;
         transition: opacity 0.3s ease;
       }
       #scrollToTopBtn.show {
         opacity: 1;
+      }
+
+      #scrollToTopBtn img {
+        width: 70px;
+        height: auto;
       }
     /*Navigation*/
     /*Nav Background*/
@@ -202,6 +206,7 @@
         height: 25px;
         position: relative;
         cursor: pointer;
+        transition: transform 0.3s ease;
     }
     .hamburger:hover {
         transform: scale(1.2);
@@ -255,8 +260,19 @@
     .nav-open {
         display: flex;
         transform: translateX(0%);
+        
     }
-    
+    /*Shoping Cart*/
+    .shoping-cart {
+        width: 55px;
+        margin-left: 210px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .shoping-cart:hover {
+        transform: scale(1.2);
+    }
 /*Main Section*/
     main {
         padding-left: 20px;
@@ -332,7 +348,7 @@
         transform: rotate(-2deg);
     }
       .postit4 {
-        margin-left: 35px;
+        margin-left: 95px;
         background-color: var(--postit-color6);
         transform: rotate(2deg);
     }
@@ -386,6 +402,7 @@
         background-color: var(--color-accent4);
         transform: rotate(-3deg);
     }
+    /*Picture Frame*/
     .picture-frame {
         width: 80%;
         margin-top: 0px;

@@ -322,11 +322,26 @@
         height: 100px;
         position: relative;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 20px;
         box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .postit1 p, .postit2 p, .postit3 p, .postit4 p, .postit5 p, .postit6 p {
+        font-family: var(--font-postit-paragraph);
+        color: var(--color-accent1);
+        margin: 0 auto;
+    }
+    .postit1 a, .postit2 a, .postit3 a, .postit4 a, .postit5 a, .postit6 a {
+        color: var(--color-accent1);
+        font-family: var(--font-postit-paragraph);
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    .postit1 a:hover, .postit2 a:hover, .postit3 a:hover, .postit4 a:hover, .postit5 a:hover, .postit6 a:hover {
+        color: blue;
     }
       .postit1:hover, .postit2:hover, .postit3:hover, .postit4:hover, .postit5:hover, .postit6:hover {
         transform: scale(1.05) rotate(0deg);

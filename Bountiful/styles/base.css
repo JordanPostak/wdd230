@@ -169,7 +169,7 @@
         line-height: 48px;
         padding: 10px;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease, transform 0.3s ease;
       }
       #scrollToTopBtn.show {
         opacity: 1;
@@ -178,6 +178,9 @@
       #scrollToTopBtn img {
         width: 70px;
         height: auto;
+      }
+      #scrollToTopBtn:hover {
+        transform: scale(1.2);
       }
     /*Navigation*/
     /*Nav Background*/

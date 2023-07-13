@@ -321,14 +321,14 @@
         text-shadow: none;
         font-family: var(--font-postit-paragraph);
         color: var(--color-accent1);
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
         box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s, box-shadow 0.3s;
     }
@@ -380,6 +380,91 @@
         background-color: var(--postit-color4);
         transform: rotate(3deg);
     }
+    .postit1 input,
+    .postit2 input,
+    .postit3 input,
+    .postit4 input,
+    .postit5 input,
+    .postit6 input,
+    .postit1 textarea,
+    .postit2 textarea,
+    .postit3 textarea,
+    .postit4 textarea,
+    .postit5 textarea,
+    .postit6 textarea {
+      font-family: var(--font-postit-paragraph);
+      font-size: 1.5rem;
+      color: var(--color-accent1);
+      background-color: transparent;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 130px;
+      height: auto;
+      outline: none;
+      border: 1px dashed;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    .postit1 input::placeholder,
+    .postit2 input::placeholder,
+    .postit3 input::placeholder,
+    .postit4 input::placeholder,
+    .postit5 input::placeholder,
+    .postit6 input::placeholder,
+    .postit1 textarea::placeholder,
+    .postit2 textarea::placeholder,
+    .postit3 textarea::placeholder,
+    .postit4 textarea::placeholder,
+    .postit5 textarea::placeholder,
+    .postit6 textarea::placeholder {
+      color: var(--color-accent1);
+      opacity: 0.5;
+    }
+
+/*chalkboard-button*/
+.chalkboard-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .chalkboard-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fff 5%, transparent 5%) 0 0,
+      linear-gradient(90deg, #fff 5%, transparent 5%) 0 0,
+      linear-gradient(#fff 5%, transparent 5%) 5px 5px,
+      linear-gradient(90deg, #fff 5%, transparent 5%) 5px 5px,
+      linear-gradient(#fff 10%, transparent 10%) 10px 10px,
+      linear-gradient(90deg, #fff 10%, transparent 10%) 10px 10px,
+      linear-gradient(#fff 10%, transparent 10%) 15px 15px,
+      linear-gradient(90deg, #fff 10%, transparent 10%) 15px 15px,
+      linear-gradient(#fff 5%, transparent 5%) 0 -5px,
+      linear-gradient(90deg, #fff 5%, transparent 5%) 0 -5px,
+      linear-gradient(#fff 5%, transparent 5%) 5px -5px,
+      linear-gradient(90deg, #fff 5%, transparent 5%) 5px -5px,
+      linear-gradient(#fff 10%, transparent 10%) 10px -10px,
+      linear-gradient(90deg, #fff 10%, transparent 10%) 10px -10px,
+      linear-gradient(#fff 10%, transparent 10%) 15px -15px,
+      linear-gradient(90deg, #fff 10%, transparent 10%) 15px -15px;
+    background-color: #000;
+    background-size: 20px 20px;
+  }
+  
+  .chalkboard-button:hover {
+    background-color: #555;
+  }
 
 /*Polaroids*/ 
       .polaroid1, .polaroid2, .polaroid3 {
@@ -387,7 +472,7 @@
         text-shadow: none;
         font-family: var(--font-postit-paragraph);
         color: var(--color-accent1);
-        width: 200px;
+        width: 220px;
         height: auto;
         position: relative;
         display: flex;
@@ -421,11 +506,12 @@
         transform: rotate(-3deg);
     }
     /*Picture Frame*/
-    .picture-frame {
-        width: 80%;
-        margin-top: 0px;
-        margin: 20px auto;
+    .picture-frame{
+        width: 70%;
+        height: auto;
+        margin: 20px;
         margin-top: 10px;
+
         border: 35px solid transparent;
         border-image-source: url(../images/picture-frame.jpg);
         border-image-slice: 46 49;
@@ -433,9 +519,17 @@
         transition: .4s all ease-in-out;
         box-shadow: var(--box-shadow-inverted), var(--box-shadow);
     }
-    
+    .picture-frame img{
+        margin-bottom: -7px;
+        width: 100%;
+    }
+    .picture-frame h1 {
+        position: absolute;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
     .picture-frame:hover {
         transform: rotate(-2deg);
-          
     }
 

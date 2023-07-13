@@ -6,7 +6,7 @@
 	<meta name="description" content="Bountiful Foods website project for Jordan Postak in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syncopate:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syncopate:wght@400;700&family=Walter+Turncoat&family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="images/bf-icon.png">
     <link rel="stylesheet" href="styles/normalize.css">
 	<title>Bountiful Foods</title>
@@ -23,14 +23,17 @@
             <a href="images/bountiful-foods-logo-1280.png" target="_blank" class="logo">
                 <img src="images/bountiful-foods-logo-300.png" alt="Bountiful Foods logo">
             </a>
-            <div id="date">current date</div>
+            <h4 id="date">current date</h4>
         </div>
         <hr>
         <nav>
             <div class="button-bar">
                 <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <div>
+                    <img class="shoping-cart" src="images/cart.png" alt="shoping cart icon"/>
                 </div>
             </div>
             <hr>
@@ -44,20 +47,67 @@
           </nav>
     </header>
     <main>
-        <div class="card">
-            <h1>About Us Page</h1>
+        <picture>
+            <div class="picture-frame">
+                <h1>About Us</h1>
+                <img src="images/bf-building.png" alt="a portrait of fresh fruits" />
+            </div>
+        </picture>
         </div>
         <div class="card">
-            <div class="postit1">title</div>
-            <p>info</p>
+            <div class="postit3">Us:</div>
+            <p>We are a small business specializing in organic, locally grown fruits and vegitables. We source our fruits and produce directly from local farmers, as well as national and international suppliers.</p>
+            <p>As an owner-operated company, we cater to walk-in traffic at our storefront in Carlsbad and our food trucks. We also offer delivery services for orders placed over the phone and via our website. Our mission is to provide fresh and healthy food options, including organic, made-to-order fruit drinks and fruit bags, to the local population and tourists visiting the coastal areas.</p>
         </div>
         <div class="card">
-            <div class="postit3">title</div>
-            <p>info</p>
-        </div>
-        <div class="card">
-            <div class="postit4">title</div>
-            <p>info</p>
+            <div class="postit5">Locations:</div>
+                <p>Physical storefront:<br>
+                 Carlsbad, California</p> 
+            <div class="polaroid1">
+                <img src="images/bf-fruit-bar.png" alt="Bountiful Foods Fruit Bar">
+            </div>
+            <p> We have food trucks that cover the coastal area from Los Angeles to San Diego: </p>
+            <p> Food Truck 1: <br>Huntington Beach, California</p>
+            <div class="polaroid3">
+                <img src="images/bf-food-truck-1.png" alt="Bountiful Food Truck 1">
+            </div>
+            <p> Food Truck 2: <br>Newport Beach, California</p>
+            <div class="polaroid1">
+                <img src="images/bf-food-truck-2.png" alt="Bountiful Food Truck 2">
+            </div>
+            <p> Food Truck 3: <br>Laguna Beach, California</p>
+            <div class="polaroid2">
+                <img src="images/bf-food-truck-3.png" alt="Bountiful Food Truck 3">
+            </div>
+        </div>    
+        <div class="card" id="contact-card">
+            <p>Contact us today:</p>
+            <div class="postit1">
+                <a href="about-us.html">info@bf.com</a>
+                <a href="tel:+19499999999" target="_blank">(949) 999-9999</a>
+            </div>
+            <div class="email-form">
+                <div class="postit4">
+                    <input placeholder="First Name?"></input>
+                    <input placeholder="Last Name?"></input>
+                </div>
+            </div>
+            <div class="email-form">
+                <div class="postit2">
+                    <input placeholder="Email Address?"></input>
+                </div>
+            </div>
+            <div class="email-form">
+                <div class="postit6">
+                    <textarea placeholder="Subject?"></textarea>
+                </div>
+            </div>
+            <div class="email-form">
+                <div class="postit3">
+                    <textarea placeholder="Content?"></textarea>
+                </div>
+            </div>
+            <button class="chalkboard-button">Send Email</button>
         </div>
         <div class="card">
             <div class="postit5">title</div>

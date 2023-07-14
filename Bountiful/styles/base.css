@@ -30,6 +30,7 @@
         --font-heading: 'Syncopate', sans-serif;
         --font-subheading: 'Roboto', sans-serif;
         --font-paragraph: 'Roboto', sans-serif;
+        --font-card-heading: 'Fredericka the Great', cursive;
         --font-card-paragraph: 'Walter Turncoat', cursive;
         --font-postit-paragraph: 'Reenie Beanie', cursive;
     }
@@ -282,9 +283,7 @@
         padding-right: 20px;
         margin-top: 25px;
         margin-bottom: 25px;
-    }
-    main {
-        transform: translateY(-7.5%);
+        transform: translateY(-250px);
         transition: transform 0.7s ease;
     }
     .main-up {
@@ -307,6 +306,21 @@
         width: 85%;
         padding-left: 25px;
         padding-right: 20px;
+    }
+    .card h1 {
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-weight: 400;
+        font-size: 3rem;
+        text-shadow: none;
+    }
+    .card h2 {
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: left;
+        text-shadow: none;
     }
     .card p {
         color: var(--color-accent4);
@@ -399,7 +413,7 @@
       margin: 0 auto;
       width: 100%;
       max-width: 130px;
-      height: auto;
+      height: 130px;
       outline: none;
       border: 1px dashed;
       margin-bottom: 5px;
@@ -421,50 +435,6 @@
       opacity: 0.5;
     }
 
-/*chalkboard-button*/
-.chalkboard-button {
-    background-color: transparent;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .chalkboard-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#fff 5%, transparent 5%) 0 0,
-      linear-gradient(90deg, #fff 5%, transparent 5%) 0 0,
-      linear-gradient(#fff 5%, transparent 5%) 5px 5px,
-      linear-gradient(90deg, #fff 5%, transparent 5%) 5px 5px,
-      linear-gradient(#fff 10%, transparent 10%) 10px 10px,
-      linear-gradient(90deg, #fff 10%, transparent 10%) 10px 10px,
-      linear-gradient(#fff 10%, transparent 10%) 15px 15px,
-      linear-gradient(90deg, #fff 10%, transparent 10%) 15px 15px,
-      linear-gradient(#fff 5%, transparent 5%) 0 -5px,
-      linear-gradient(90deg, #fff 5%, transparent 5%) 0 -5px,
-      linear-gradient(#fff 5%, transparent 5%) 5px -5px,
-      linear-gradient(90deg, #fff 5%, transparent 5%) 5px -5px,
-      linear-gradient(#fff 10%, transparent 10%) 10px -10px,
-      linear-gradient(90deg, #fff 10%, transparent 10%) 10px -10px,
-      linear-gradient(#fff 10%, transparent 10%) 15px -15px,
-      linear-gradient(90deg, #fff 10%, transparent 10%) 15px -15px;
-    background-color: #000;
-    background-size: 20px 20px;
-  }
-  
-  .chalkboard-button:hover {
-    background-color: #555;
-  }
 
 /*Polaroids*/ 
       .polaroid1, .polaroid2, .polaroid3 {
@@ -533,3 +503,39 @@
         transform: rotate(-2deg);
     }
 
+    /*Chalkboard Button*/
+    .chalkboard-button {
+        padding-left: 25px;
+        text-align: left;
+        margin: 20px;
+        border: none;
+        width: 200px;
+        height: 120px;
+        background-color: transparent;
+        background-image: url(../images/chalkboard-button.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: .4s all ease-in-out;
+      }
+      .chalkboard-button:hover {
+        transform: scale(1.1);
+      }
+      .chalkboard-button:focus {
+        transform: translateX(200%) rotate(-30deg);
+        transition: 4s;
+      }
+      .chalkboard-button h1 {
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-size: 1rem;
+      }
+      .chalkboard-button h2 {
+        margin-left: 5px;
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-size: 1rem;
+        transform: rotate(-15deg);
+      }
+      
+      

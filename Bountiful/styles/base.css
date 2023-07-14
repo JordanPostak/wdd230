@@ -9,6 +9,7 @@
         --color-accent3: rgb(255, 213, 0);
         --color-accent4: #ffffffff;
         --color-accent5: rgb(143, 143, 143);
+        --color-accent6: rgb(101, 152, 80);
 
         --postit-color1: #ffb6b9; /* pastel pink */
         --postit-color2: #ffa07a; /* pastel salmon */
@@ -503,6 +504,36 @@
         transform: rotate(-2deg);
     }
 
+    /*old-map*/
+    .old-map{
+        width: 65%;
+        height: 200px;
+        margin: 20px;
+        margin-top: 10px;
+
+        border: 35px solid transparent;
+        border-image-source: url(../images/old-map-frame.jpg);
+        border-image-slice: 46 49;
+        border-image-repeat: round;
+        transition: transform 0.8s, box-shadow 0.8s;
+        box-shadow: var(--box-shadow-inverted), var(--box-shadow);
+        box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
+    }
+    .old-map iframe{
+        margin-bottom: -7px;
+        width: 100%;
+    }
+    .old-map h1 {
+        position: absolute;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .old-map:hover {
+        transform: scale(1.05);
+        box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.4);
+    }
+
     /*Chalkboard Button*/
     .chalkboard-button {
         padding-left: 25px;
@@ -518,11 +549,12 @@
         background-repeat: no-repeat;
         transition: .4s all ease-in-out;
       }
+    
       .chalkboard-button:hover {
         transform: scale(1.1);
       }
       .chalkboard-button:focus {
-        transform: translateX(200%) rotate(-30deg);
+        transform: translateX(300%) rotate(-30deg);
         transition: 4s;
       }
       .chalkboard-button h1 {
@@ -537,5 +569,16 @@
         font-size: 1rem;
         transform: rotate(-15deg);
       }
+
+/*fruit mix form*/
+.fruit-option {
+    background-color: var(--color-accent6);
+    border-color: var(--color-accent4);
+    font-family: var(--font-card-heading);
+    color: var(--color-accent4);
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+  }
       
       

@@ -372,8 +372,16 @@
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
         margin: 0px;
-        margin-top: 20px;
-        font-size: 1.5rem;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+    .postit1 h7, .postit2 h7, .postit3 h7, .postit4 h7, .postit5 h7, .postit6 h7 {
+        position: relative;
+        color: var(--color-accent1);
+        font-family: var(--font-postit-paragraph);
+        margin: 0px;
+        font-size: 1.2rem;
         font-weight: lighter;
     }
     .postit1 a:hover, .postit2 a:hover, .postit3 a:hover, .postit4 a:hover, .postit5 a:hover, .postit6 a:hover {
@@ -454,6 +462,20 @@
       opacity: 0.5;
     }
 
+    .stacked {
+        margin-bottom: -130px;
+        margin-left: 60px;
+        transition: .4s all ease-in-out;
+    }
+    .unstacked {
+        
+        margin-bottom: 0px;
+        margin-left: 50px;
+        transition: .4s all ease-in-out;
+    }
+    #mixes {
+        padding-bottom: 150px;
+    }
 
 /*Polaroids*/ 
       .polaroid1, .polaroid2, .polaroid3 {
@@ -608,9 +630,7 @@
       .shake-button:hover {
         transform: scale(1.1);
       }
-      .shake-button:focus {
-        transform: translateX(1000%);
-        transition: 8s;
+      .shake-button.animated {
         animation: shake 2s 1;
       }
       .shake-button h1 {

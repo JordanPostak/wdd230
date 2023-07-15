@@ -29,12 +29,20 @@ fetch(fruitDataUrl)
     });
   });
 
-// Display the specialty drink count on the home page when the page loads
-window.addEventListener("load", function () {
-  const specialtyDrinkCount = getSpecialtyDrinkCount();
-  // Update the information card with the specialty drink count
-  const specialtyDrinkCountElement = document.getElementById("specialty-drink-count");
-  specialtyDrinkCountElement.textContent = specialtyDrinkCount.toString();
+// Add click event listener to each stacked post-it
+const stackedPostits = document.querySelectorAll(".postit1.stacked, .postit2.stacked, .postit3.stacked, .postit4.stacked, .postit5.stacked, .postit6.stacked");
+stackedPostits.forEach(postit => {
+  postit.addEventListener("click", () => {
+    // Toggle the "expanded" class on the clicked post-it
+    postit.classList.toggle("expanded");
+
+    // Collapse other post-its
+    stackedPostits.forEach(p => {
+      if (p !== postit && p.classList.contains("expanded")) {
+        p.classList.remove("expanded");
+      }
+    });
+  });
 });
 
 // Function to generate post-it div for each mix with a random postit class
@@ -43,10 +51,11 @@ function generatePostIt(mix) {
   const randomClass = postitClasses[Math.floor(Math.random() * postitClasses.length)];
 
   const mixContainer = document.createElement("div");
-  mixContainer.classList.add(randomClass); // Add the randomly selected post-it class
+  mixContainer.classList.add(randomClass, "stacked"); // Add the randomly selected post-it class and the "stacked" id
   mixContainer.innerHTML = `
     <h5>${mix.mixName}</h5>
     <h6>${mix.selectedFruits.join(", ")}</h6>
+    <h7>Protein: ${mix.totalProtein.toFixed(2)} g, Fat: ${mix.totalFat.toFixed(2)} g, Sugar: ${mix.totalSugar.toFixed(2)} g, Calories: ${mix.totalCalories.toFixed(2)}</h7>
   `;
   return mixContainer;
 }
@@ -69,4 +78,21 @@ function displayMixes() {
 // Display the specialty drink count and mix data on the home page when the page loads
 window.addEventListener("load", function () {
   displayMixes();
+
+    // Add click event listener to each stacked post-it
+    const stackedPostits = document.querySelectorAll(".stacked");
+    stackedPostits.forEach(postit => {
+    postit.addEventListener("click", () => {
+        // Add or remove "unstacked" class
+        postit.classList.toggle("unstacked");
+
+        // Collapse other post-its
+        stackedPostits.forEach(p => {
+        if (p !== postit && p.classList.contains("unstacked")) {
+            p.classList.add("stacked");
+            p.classList.remove("unstacked");
+        }
+        });
+    });
+    });
 });

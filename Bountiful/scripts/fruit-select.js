@@ -5,6 +5,8 @@ const submitBtn = document.getElementById("submit-btn");
 const mixDataKey = "fruitMixes"; 
 const specialtyDrinkCountKey = "specialtyDrinkCount"; 
 
+let requiredFields = [];
+
 // Function to update the specialty drink count and store it in local storage
 function updateSpecialtyDrinkCount(count) {
   localStorage.setItem(specialtyDrinkCountKey, count.toString());
@@ -39,6 +41,32 @@ submitBtn.addEventListener("click", function() {
   const specialInstructions = document.getElementById("special-instructions").value;
   const selectedFruits = Array.from(document.querySelectorAll(".fruit-option")).map(select => select.value);
   const mixName = document.getElementById("mix-name").value;
+
+// Clear the requiredFields array before checking each required field
+requiredFields = [];
+
+// Check if each required field is filled
+if (!firstName) requiredFields.push("First Name");
+if (!email) requiredFields.push("Email Address");
+if (!phone) requiredFields.push("Phone Number");
+if (selectedFruits.length === 0) requiredFields.push("Fruits");
+if (!mixName) requiredFields.push("Mix Name");
+
+// If there are required fields not filled, show a popup message with their names
+if (requiredFields.length > 0) {
+  const errorMessage = "Please fill in the remaining required fields:\n" + requiredFields.join("\n");
+  alert(errorMessage);
+  return;
+}
+
+// If all required fields are filled, apply the animation
+submitBtn.classList.add("animated");
+setTimeout(() => {
+  submitBtn.classList.remove("animated");
+}, 2000);
+
+ // Scroll to the output area
+ outputArea.scrollIntoView({ behavior: "smooth" });
 
   // Calculate total nutrition values
   let totalCarbohydrates = 0;
@@ -89,8 +117,8 @@ submitBtn.addEventListener("click", function() {
       // Format and display output to the output area on the fresh page
       const currentDate = new Date().toLocaleDateString();
       const output = `
-        <h2>Order Details:</h2>
-        <p><strong>Order Date:</strong> ${currentDate}</p>
+        <h2>New Mix Details:</h2>
+        <p><strong>Creation Date:</strong> ${currentDate}</p>
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phone}</p>

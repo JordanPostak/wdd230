@@ -57,7 +57,7 @@
         text-decoration: none;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
         font-family: var(--font-heading);
         color: var(--color-accent3);
     }
@@ -342,7 +342,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: top;
         padding: 10px;
         box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s, box-shadow 0.3s;
@@ -357,6 +357,24 @@
         font-family: var(--font-postit-paragraph);
         margin: 0 auto;
         font-size: 1.5rem;
+    }
+    .postit1 h5, .postit2 h5, .postit3 h5, .postit4 h5, .postit5 h5, .postit6 h5 {
+        position: relative;
+        color: var(--color-accent1);
+        font-family: var(--font-postit-paragraph);
+        margin: 0px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .postit1 h6, .postit2 h6, .postit3 h6, .postit4 h6, .postit5 h6, .postit6 h6 {
+        position: relative;
+        color: var(--color-accent1);
+        font-family: var(--font-postit-paragraph);
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        font-weight: lighter;
     }
     .postit1 a:hover, .postit2 a:hover, .postit3 a:hover, .postit4 a:hover, .postit5 a:hover, .postit6 a:hover {
         color: blue;
@@ -548,6 +566,7 @@
         background-position: center;
         background-repeat: no-repeat;
         transition: .4s all ease-in-out;
+        cursor: pointer;
       }
     
       .chalkboard-button:hover {
@@ -569,6 +588,57 @@
         font-size: 1rem;
         transform: rotate(-15deg);
       }
+    /*Shake Button*/
+    .shake-button {
+        padding-left: 25px;
+        text-align: left;
+        margin: 20px;
+        border: none;
+        width: 100px;
+        height: 150px;
+        background-color: transparent;
+        background-image: url(../images/shake-button.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: .4s all ease-in-out;
+        cursor: pointer;
+      }
+    
+      .shake-button:hover {
+        transform: scale(1.1);
+      }
+      .shake-button:focus {
+        transform: translateX(1000%);
+        transition: 8s;
+        animation: shake 2s 1;
+      }
+      .shake-button h1 {
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-size: 1rem;
+      }
+      .shake-button h2 {
+        margin-left: 5px;
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-size: 1rem;
+        transform: rotate(-15deg);
+      }
+      /* Define the keyframes for the shaking animation */
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        5% { transform: translateX(-5px) rotate(-30deg); }
+        10% { transform: translateX(5px) rotate(30deg); }
+        15% { transform: translateX(-5px) rotate(-30deg); }
+        20% { transform: translateX(-5px) rotate(-30deg); }
+        25% { transform: translateX(5px) rotate(30deg); }
+        30% { transform: translateX(-5px) rotate(-30deg); }
+        50% { transform: rotate(60deg); }
+        70% { transform: translateX(100%) rotate(130deg); }
+        90% { transform: translateX(100%) rotate(160deg); }
+        100% { transform: translateX(200%) translatey(-200%) rotate(160deg); }
+    }
 
 /*fruit mix form*/
 .fruit-option {

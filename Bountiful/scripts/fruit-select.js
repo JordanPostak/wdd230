@@ -2,6 +2,20 @@ const fruitDataUrl = "fruit-data.json";
 const outputArea = document.getElementById("output-area");
 const submitBtn = document.getElementById("submit-btn");
 
+const mixDataKey = "fruitMixes"; 
+const specialtyDrinkCountKey = "specialtyDrinkCount"; 
+
+// Function to update the specialty drink count and store it in local storage
+function updateSpecialtyDrinkCount(count) {
+  localStorage.setItem(specialtyDrinkCountKey, count.toString());
+}
+
+// Function to get the specialty drink count from local storage
+function getSpecialtyDrinkCount() {
+  const count = localStorage.getItem(specialtyDrinkCountKey);
+  return count ? parseInt(count, 10) : 0;
+}
+
 // Populate fruit select options from JSON data
 fetch(fruitDataUrl)
   .then(response => response.json())
@@ -24,6 +38,7 @@ submitBtn.addEventListener("click", function() {
   const phone = document.getElementById("phone").value;
   const specialInstructions = document.getElementById("special-instructions").value;
   const selectedFruits = Array.from(document.querySelectorAll(".fruit-option")).map(select => select.value);
+  const mixName = document.getElementById("mix-name").value;
 
   // Calculate total nutrition values
   let totalCarbohydrates = 0;
@@ -46,23 +61,56 @@ submitBtn.addEventListener("click", function() {
         }
       });
 
-      // Format and display output
+      // Create an object to represent the mix
+      const mix = {
+        firstName,
+        email,
+        phone,
+        selectedFruits,
+        specialInstructions,
+        totalCarbohydrates,
+        totalProtein,
+        totalFat,
+        totalSugar,
+        totalCalories,
+        orderDate: new Date().toLocaleDateString(),
+        mixName,
+      };
+
+      // Save the mix data to local storage
+      let mixData = JSON.parse(localStorage.getItem(mixDataKey)) || [];
+      mixData.push(mix);
+      localStorage.setItem(mixDataKey, JSON.stringify(mixData));
+
+      // Update the specialty drink count
+      const specialtyDrinkCount = getSpecialtyDrinkCount();
+      updateSpecialtyDrinkCount(specialtyDrinkCount + 1);
+
+      // Format and display output to the output area on the fresh page
       const currentDate = new Date().toLocaleDateString();
       const output = `
         <h2>Order Details:</h2>
+        <p><strong>Order Date:</strong> ${currentDate}</p>
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phone}</p>
+        <h2>______________</h2>
+        <h2>${mixName}</h2>
         <p><strong>Selected Fruits:</strong> ${selectedFruits.join(", ")}</p>
         <p><strong>Special Instructions:</strong> ${specialInstructions}</p>
+        <h2>______________</h2>
         <h2>Nutrition Information:</h2>
         <p><strong>Total Carbohydrates:</strong> ${totalCarbohydrates.toFixed(2)} g</p>
         <p><strong>Total Protein:</strong> ${totalProtein.toFixed(2)} g</p>
         <p><strong>Total Fat:</strong> ${totalFat.toFixed(2)} g</p>
         <p><strong>Total Sugar:</strong> ${totalSugar.toFixed(2)} g</p>
         <p><strong>Total Calories:</strong> ${totalCalories.toFixed(2)}</p>
-        <p><strong>Order Date:</strong> ${currentDate}</p>
       `;
       outputArea.innerHTML = output;
     });
 });
+
+
+
+
+

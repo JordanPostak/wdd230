@@ -47,6 +47,12 @@
           </nav>
     </header>
     <main>
+        <picture>
+            <div class="picture-frame">
+                <h1>Fresh Page</h1>
+                <img src="images/juice-jar-top.jpeg" alt="a portrait of fresh fruits" />
+            </div>
+        </picture>
         <div class="card" id="fruit-mix">
             <h1>Create a Mix!</h1>
             <div class="email-form">
@@ -74,34 +80,18 @@
               <select id="fruit2" class="fruit-option"></select>
               <select id="fruit3" class="fruit-option"></select>
             </div>
-            <button id="submit-btn" class="chalkboard-button">
-              <h1>Send</h1>
-              <h2>Email</h2>
-            </button>
+            <div class="email-form">
+                <div class="postit2">
+                  <textarea id="mix-name" placeholder="Name your Mix"></textarea>
+                </div>
+            </div>
+            <button id="submit-btn" class="shake-button"></button>
           </div>
-        
         <div class="card">
             <h1>New Mix :</h1>  
             <div id="output-area"></div>
         </div>
-            <div class="card">
-                <div class="postit3">title</div>
-                <p>info</p>
-            </div>
-            <div class="card">
-                <div class="postit4">title</div>
-                <p>info</p>
-            </div>
-            <div class="card">
-                <div class="postit5">title</div>
-                <p>info</p>
-            </div>
-            <div class="card">
-                <div class="postit6">title</div>
-                <p>info</p>
-            </div>
     </main>
-    
     <footer>
         <hr>
         <div class="footer-display">
@@ -126,10 +116,13 @@
             <p><b>&nbsp;Jordan Postak&nbsp;</b></p><p>&nbsp;WDD 230 Project&nbsp;</p>
             <p class="last-modified">&nbsp;<em><span id="lastModified">last modified: never</span></em>&nbsp;</p>
         </div>
+        <button id="scrollToTopBtn">
+            <img src="images/drink-up.png" alt="Bountiful Foods logo">
+        </button>
       </footer>
-      <script src="scripts/hamburger.js"></script>
-      <script src="scripts/current-date.js"></script>
-      <script src="scripts/scroll-up.js"></script>
-      <script src="scripts/fruit-select.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+    <script src="scripts/scroll-up.js"></script>
+    <script src="scripts/fruit-select.js"></script>
     </body>
 </html> 

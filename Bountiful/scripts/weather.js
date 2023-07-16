@@ -79,7 +79,7 @@ async function fetchForecast() {
             const forecastDay = new Date(forecastForDay.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' });
             const forecastTemperature = Math.round(forecastForDay.main.temp);
             // Replace the incorrect icon code with the correct one for the day weather condition
-            const forecastIconCode = forecastForDay.weather[0].icon;
+            const forecastIconCode = forecastForDay.weather[0].icon.replace(/n$/, "d");
             const forecastCondition = capitalizeFirstLetter(forecastForDay.weather[0].description);
   
             // Create elements for each forecast day

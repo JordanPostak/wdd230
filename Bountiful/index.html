@@ -139,10 +139,24 @@
             </div>
             <p>While Laguna Beach is primarily known for its artistic and natural beauty, there are farms and agricultural areas in nearby regions of Orange County. Some farms grow crops like avocados, citrus fruits, and specialty herbs.</p>
         </div>
-
-        <div class="card">
+        <div class="card weather-section">
             <h1>Weather</h1>
-            <p>Weather information</p>
+            <h2>_____________</h2>
+            <div class="weather-card">
+                <h2 id="weathertoday">Today's Weather :</h2>
+                <div class="icon-temp">
+                    <img src="images/chalkboard-sun.png" alt="Weather Icon" id="weather-icon">
+                    <p id="temperature"><span id="temp">60</span></p>
+                </div>
+                <p><span id="weather-condition">Sunny</span></p>
+                <h2>_____________</h2>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <h2>_____________</h2>
+                <h1>3-Day Forecast:</h1>
+                <div id="forecast-container"></div>
+            </div>
         </div>
     </main>
     <footer>
@@ -155,7 +169,7 @@
         <div class="footer-general-info">
             <div>
                 <h2>Bountiful Foods</h2>
-                <h3>23 Catalina Drive<br>Laguna Beach<br>California 92651</h3>
+                <h3>550 Carlsbad Village Drive<br>Carlsbad<br>California 92008</h3>
             </div>
         <hr>
         &nbsp
@@ -178,5 +192,6 @@
       <script src="scripts/current-date.js"></script>
       <script src="scripts/scroll-up.js"></script>
       <script src="scripts/home-mix.js"></script>
+      <script src="scripts/weather.js"></script>
     </body>
 </html> 

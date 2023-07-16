@@ -372,7 +372,8 @@
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
         margin: 0px;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         font-size: 1.2rem;
         font-weight: lighter;
     }
@@ -670,5 +671,17 @@
     padding: 10px;
     margin-top: 20px;
   }
+
+  /**/
       
-      
+/*home page weather*/   
+.icon-temp img {
+    width: 6rem;
+    float: left;
+    margin-right: 40px;
+}   
+.forecast-day img {
+    width: 6rem;
+    float: left;
+    margin-right: 40px;
+}

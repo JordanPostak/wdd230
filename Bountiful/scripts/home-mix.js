@@ -55,7 +55,7 @@ function generatePostIt(mix) {
   mixContainer.innerHTML = `
     <h5>${mix.mixName}</h5>
     <h6>${mix.selectedFruits.join(", ")}</h6>
-    <h7>Protein: ${mix.totalProtein.toFixed(2)} g, Fat: ${mix.totalFat.toFixed(2)} g, Sugar: ${mix.totalSugar.toFixed(2)} g, Calories: ${mix.totalCalories.toFixed(2)}</h7>
+    <h7>${mix.totalProtein.toFixed(2)} g Protein, ${mix.totalFat.toFixed(2)} g Fat, ${mix.totalSugar.toFixed(2)} g Sugar, ${mix.totalCalories.toFixed(2)} Calories</h7>
   `;
   return mixContainer;
 }

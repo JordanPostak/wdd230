@@ -135,6 +135,15 @@ setTimeout(() => {
         <p><strong>Total Calories:</strong> ${totalCalories.toFixed(2)}</p>
       `;
       outputArea.innerHTML = output;
+
+      // Clear the input fields after the form is submitted
+      document.getElementById("first-name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("special-instructions").value = "";
+      document.getElementById("mix-name").value = "";
+      const fruitOptions = document.querySelectorAll(".fruit-option");
+      fruitOptions.forEach(option => (option.value = ""));
     });
 });
 

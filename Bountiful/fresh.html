@@ -32,6 +32,13 @@
                 <span class="line"></span>
                 <span class="line"></span>
                 </div>
+                <div class="social-icons">
+                  <ul>
+                      <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png" loading="lazy" alt="Facebook"></a></li>
+                      <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png" loading="lazy" alt="Instagram"></a></li>
+                      <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" loading="lazy" alt="LinkedIn"></a></li>
+                  </ul>
+              </div>
                 <div>
                     <img class="shoping-cart" src="images/cart.png" alt="shoping cart icon"/>
                 </div>
@@ -47,12 +54,16 @@
           </nav>
     </header>
     <main>
-        <picture>
-            <div class="picture-frame">
-                <h1>Fresh Page</h1>
-                <img src="images/juice-jar-top.jpeg" alt="a portrait of fresh fruits" />
+          <div class="picture-frame">
+              <h1>Fresh Page</h1>
+              <div class="blur-load" style="background-image: url(images/juice-jar-top-20.jpg);">
+                <picture>
+                    <source srcset="images/juice-jar-top.jpeg" media="(max-width: 767px)">
+                    <source srcset="images/juice-jar-top.jpeg" media="(max-width: 1199px)">
+                    <img src="juice-jar-top.jpeg" alt="a portrait of fresh fruits">
+                </picture>
             </div>
-        </picture>
+          </div>
         <div class="card" id="fruit-mix">
             <h1>Create a Mix!</h1>
             <div class="email-form">
@@ -123,5 +134,6 @@
     <script src="scripts/current-date.js"></script>
     <script src="scripts/scroll-up.js"></script>
     <script src="scripts/fruit-select.js"></script>
+    <script src="scripts/lazy-load.js"></script>
     </body>
 </html> 

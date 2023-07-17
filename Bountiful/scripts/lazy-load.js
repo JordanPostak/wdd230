@@ -1,52 +1,54 @@
-const blurDivs = document.querySelectorAll(".blur-load");
 
-blurDivs.forEach((div) => {
-  const img = div.querySelector("img");
 
-  function loaded() {
-    div.classList.add("loaded");
-    setTimeout(() => {
-      div.style.backgroundImage = "none";
-    }, 200); // Adjust the delay (in milliseconds) to fit your needs
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to load the high-resolution image
+function loadHighResImage(image) {
+  const highResSrc = image.dataset.src;
+  if (highResSrc && !image.src) {
+    image.src = highResSrc;
+    image.classList.add('loaded');
   }
+}
 
-  if (img.complete) {
-    loaded();
-  } else {
-    img.addEventListener("load", loaded);
+// Function to load the blurred background image
+function loadBlurredBackground(element) {
+  const blurredSrc = element.style.backgroundImage;
+  if (blurredSrc) {
+    element.style.backgroundImage = '';
+    element.style.backgroundImage = blurredSrc;
+    element.classList.add('loaded');
   }
-});
+}
 
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+// Function to handle lazy loading for images and blurred backgrounds
+function lazyLoadImages() {
+  const images = document.querySelectorAll('img[data-src]');
+  const blurLoads = document.querySelectorAll('.blur-load:not(.loaded)');
 
-const imgOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px 50px 0px",
-};
-
-const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
-  image.onload = () => {
-    image.removeAttribute("data-src");
-    image.parentNode.classList.add("loaded");
-  };
-};
-
-if ("IntersectionObserver" in window) {
-  const imgObserver = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
-      }
-    });
-  }, imgOptions);
-
-  imagesToLoad.forEach((img) => {
-    imgObserver.observe(img);
+  images.forEach((image) => {
+    if (isInViewport(image)) {
+      loadHighResImage(image);
+    }
   });
-} else {
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
+
+  blurLoads.forEach((element) => {
+    if (isInViewport(element)) {
+      loadBlurredBackground(element);
+    }
   });
 }
+
+
+// Call the lazyLoadImages function on page load and scroll
+document.addEventListener('DOMContentLoaded', lazyLoadImages);
+document.addEventListener('scroll', lazyLoadImages);

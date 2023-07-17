@@ -270,10 +270,11 @@
      /*Social media div*/
      .social-icons ul {
         display: flex;
+        margin-left: -20px;
     }
     .social-icons ul li a img{
         margin-top: 10px;
-        margin-right: 15px;
+        margin-right: 10px;
         cursor: pointer;
         transition: transform 0.3s ease;
     }
@@ -283,7 +284,7 @@
     /*Shoping Cart*/
     .shoping-cart {
         width: 55px;
-        margin-left: 55px;
+        margin-left: 25px;
         margin-top: 10px;
         cursor: pointer;
         transition: transform 0.3s ease;

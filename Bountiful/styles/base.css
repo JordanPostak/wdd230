@@ -207,9 +207,7 @@
     /*hamburger*/
     .hamburger {
         margin: 25px;
-        margin-right: 40px;
-        padding-right: 6px;
-        width: 50px;
+        width: 55px;
         height: 25px;
         position: relative;
         cursor: pointer;
@@ -270,24 +268,22 @@
         
     }
      /*Social media div*/
-     .social-icons {
-        margin-top: 10px;
+     .social-icons ul {
         display: flex;
-        flex-direction: row;
-        margin-left: 0px;
-        margin-right: -190px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
-    .social-icons a {
-        margin-right: 10px;
+    .social-icons ul li a img{
+        margin-top: 10px;
+        margin-right: 15px;
         cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .social-icons ul li a img:hover{
+        transform: scale(1.2);
     }
     /*Shoping Cart*/
     .shoping-cart {
         width: 55px;
-        margin-left: 210px;
+        margin-left: 55px;
         margin-top: 10px;
         cursor: pointer;
         transition: transform 0.3s ease;

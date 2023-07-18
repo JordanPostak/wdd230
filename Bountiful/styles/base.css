@@ -418,7 +418,7 @@
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
         margin: 0px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
         text-decoration: underline;
     }
@@ -437,7 +437,7 @@
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
         margin: 0px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: lighter;
     }
     .postit1 a:hover, .postit2 a:hover, .postit3 a:hover, .postit4 a:hover, .postit5 a:hover, .postit6 a:hover {
@@ -500,7 +500,7 @@
       outline: none;
       border: 1px dashed;
       margin-bottom: 5px;
-      margin-top: 5px;
+      margin-top: 20px;
     }
     .postit1 input::placeholder,
     .postit2 input::placeholder,
@@ -524,15 +524,39 @@
         transition: .4s all ease-in-out;
     }
     .unstacked {
-        
         margin-bottom: 0px;
         margin-left: 50px;
         transition: .4s all ease-in-out;
+        z-index: 2;
+    }
+    .mixes-container .unstacked:hover {
+        transform: scale(1.5);
+        transition: transform 1s, box-shadow 0.1s;
     }
     #mixes {
         padding-bottom: 150px;
     }
-
+    .postit-top {
+        display: flex;
+    }
+    .add {
+        float: right;
+        height: 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-color: var(--color-accent1);
+        color: var(--color-accent1);
+        padding-bottom: 35px;
+        font-size: 15px;
+        transition: .4s all ease-in-out;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    .add:hover {
+        transform: scale(1.2);
+    }
 /*Polaroids*/ 
       .polaroid1, .polaroid2, .polaroid3 {
         margin: 25px;
@@ -724,7 +748,7 @@
     }
 
 /*fruit mix form*/
-.fruit-option {
+.fruit-option, .fruit-item {
     background-color: var(--color-accent6);
     border-color: var(--color-accent4);
     font-family: var(--font-card-heading);
@@ -733,8 +757,52 @@
     padding: 10px;
     margin-top: 20px;
   }
-
-  /**/
+  .mix-item, .mix-custom-item {
+    background-color: var(--color-accent6);
+    border-color: var(--color-accent4);
+    font-family: var(--font-card-heading);
+    font-size: 25px;
+    color: var(--color-accent4);
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .quantity-input {
+    background-color: var(--color-accent6);
+    width: 50px;
+    border: 1px solid;
+    border-color: var(--color-accent4);
+    color: var(--color-accent4);
+    padding: 5px;
+    font-family: var(--font-card-heading);
+    justify-content: center;
+    text-align: center;
+  }
+  .order-button {
+    margin-right: 50px;
+    background-color: transparent;
+    width: 100px;
+    height: 75px;
+    border: none;
+    color: var(--color-accent4);
+    padding: 15px;
+    padding-bottom: 35px;
+    font-family: var(--font-card-heading);
+    font-size: 25px;
+    background-image: url(../images/add-to-cart-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .4s all ease-in-out;
+    cursor: pointer;
+}
+.order-button:hover {
+transform: scale(1.2);
+}
+  /*Fruit Select*/
+  .fruit-select {
+    margin-top: 130px;
+  }
       
 /*home page weather*/   
 .icon-temp img {

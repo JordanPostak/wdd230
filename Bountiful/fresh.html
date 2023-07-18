@@ -67,39 +67,74 @@
         <div class="card" id="fruit-mix">
             <h1>Create a Mix!</h1>
             <div class="email-form">
-              <div class="postit1">
+              <div class="postit1 stacked">
+                <h5>First Name</h5>
                 <input id="first-name" placeholder="First Name">
               </div>
             </div>
             <div class="email-form">
-              <div class="postit2">
+              <div class="postit2 stacked">
+                <h5>Email</h5>
                 <input id="email" placeholder="Email Address">
               </div>
             </div>
             <div class="email-form">
-              <div class="postit3">
+              <div class="postit3 stacked">
+                <h5>Phone</h5>
                 <input id="phone" placeholder="Phone Number">
               </div>
             </div>
             <div class="email-form">
-              <div class="postit4">
+              <div class="postit4 stacked">
+                <h5>Instructions</h5>
                 <textarea id="special-instructions" placeholder="Special Instructions"></textarea>
               </div>
+            </div>
+            <div class="email-form">
+                <div class="postit2 stacked">
+                  <h5>Mix Name</h5>
+                  <textarea id="mix-name" placeholder="Name your Mix"></textarea>
+                </div>
             </div>
             <div class="fruit-select">
               <select id="fruit1" class="fruit-option"></select>
               <select id="fruit2" class="fruit-option"></select>
               <select id="fruit3" class="fruit-option"></select>
             </div>
-            <div class="email-form">
-                <div class="postit2">
-                  <textarea id="mix-name" placeholder="Name your Mix"></textarea>
-                </div>
-            </div>
+            
             <button id="submit-btn" class="shake-button"></button>
             <h2>_____________</h2>  
             <div id="output-area"></div>
           </div>
+          <section class="card" id="store">
+            <div class="individual-fruits">
+              <h1>Store</h1>
+              <h2>_____________</h2> 
+              <h2>Individual Fruits :</h2>
+              <div class="fruit-items">
+                <select id="fruit-item-info" class="fruit-item"></select>
+                <!-- Fruits will be dynamically added here -->
+                <div class="fruit-item-details" data-id=""></div>
+              </div>
+            </div>
+            <h2>_____________</h2> 
+            <div class="frozen-mixes">
+              <h2>Frozen Fruit Mixes</h2>
+              <select id="mix-item" class="mix-item"></select>
+              <div class="mix-item-info">
+                <!-- Frozen fruit mixes will be dynamically added here -->
+                <div class="frozen-item-details" data-id=""></div>
+              </div>
+            </div>
+            <h2>_____________</h2> 
+            <div id="mixes">
+              <h1>Your Mixes:</h1>
+              <p>Here are all your mixes</p>
+              <p>Total Mixes Created: <span id="specialty-drink-count">0</span></p>
+              <div id="mixes-container" class="mixes-container">
+              </div>
+            </div>
+          </section>
     </main>
     <footer>
       <hr>
@@ -135,5 +170,8 @@
     <script src="scripts/scroll-up.js"></script>
     <script src="scripts/fruit-select.js"></script>
     <script src="scripts/lazy-load.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/mix-form.js"></script>
+    <script src="scripts/fresh-mix.js"></script>
     </body>
 </html> 

@@ -1,4 +1,4 @@
-const fruitDataUrl = "fruit-data.json";
+const fruitDataUrl = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 const outputArea = document.getElementById("output-area");
 const submitBtn = document.getElementById("submit-btn");
 

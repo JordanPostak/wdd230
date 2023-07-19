@@ -60,23 +60,22 @@
     .home main .grid-toggle{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 15px;
         justify-content: center;
         }
     .fresh main .grid-toggle{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 15px;
         justify-content: center;
     }
     .about-us main .grid-toggle{
         grid-column: 1 / span 3;
-        grid-template-rows: 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 600px 400px 1600px 1800px;
         gap: 25px;
         justify-content: center;
     }
@@ -140,12 +139,12 @@
             width: auto;
             z-index: 3;
         }
-        .about-us main .grid-toggle .frame-cusion {
-            width: 90%;
-            margin-left: 90px;
-            grid-column: 1 / span 2;
-            grid-template-rows: 1;
-            z-index: 3;
+        .about-us main .grid-toggle .picture-frame {
+          position: absolute;
+          top: -10px;
+          left: 5%;
+          width: auto;
+          z-index: 3;
         }
         
         /*cards*/
@@ -200,11 +199,7 @@
             grid-row: 1 / 2;
             margin-top: 250px;
           }
-          .about-us main .grid-toggle .flex-toggle {
-            margin-top: -40px;
-          }
           .about-us main .grid-toggle .us-card {
-            margin-top: -230px;
             width: 90%;
             grid-column: 1 / span 2;
             grid-row: 2;
@@ -220,12 +215,14 @@
             grid-row: 3;
           }
           .about-us main .grid-toggle .flex-toggle {
+            margin-right: 24px;
+            margin-top: -20px;
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-column: 1 / span 3;
             grid-row: 3/4;
             gap: 15px;
-            grid-row: 5;
+            grid-row: 4;
           }
           .about-us main .grid-toggle .flex-toggle .map-card {
             grid-column: 1 / span 1;

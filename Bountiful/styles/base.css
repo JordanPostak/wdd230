@@ -67,7 +67,7 @@
         margin-bottom: 0;
         margin-top: 0;
         background: var(--color-gradient);
-        border: var(--color-gradient);
+        border: 2px solid var(--color-gradient);
         box-shadow: var(--box-shadow);
       }
     h2 {
@@ -236,7 +236,6 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
         text-align: left;
         width: 100%;
       }
@@ -402,7 +401,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: top;
         padding: 10px;
         box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s, box-shadow 0.3s;

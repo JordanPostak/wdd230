@@ -411,12 +411,14 @@
         font-family: var(--font-postit-paragraph);
         color: var(--color-accent1);
         margin: 0 auto;
+        font-weight: bold;
     }
     .postit1 a, .postit2 a, .postit3 a, .postit4 a, .postit5 a, .postit6 a {
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
         margin: 0 auto;
         font-size: 1.5rem;
+        font-weight: bold;
     }
     .postit1 label, .postit2 label, .postit3 label, .postit4 label, .postit5 label, .postit6 label {
         color: var(--color-accent1);
@@ -442,8 +444,8 @@
         margin: 0px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 1.2rem;
-        font-weight: lighter;
+        font-size: 1.1rem;
+        font-weight: bold;
     }
     .postit1 h3, .postit2 h3, .postit3 h3, .postit4 h3, .postit5 h3, .postit6 h3 {
         position: relative;
@@ -451,7 +453,7 @@
         font-family: var(--font-postit-paragraph);
         margin: 0px;
         font-size: 1rem;
-        font-weight: lighter;
+        font-weight: bold;
     }
     .postit1 a:hover, .postit2 a:hover, .postit3 a:hover, .postit4 a:hover, .postit5 a:hover, .postit6 a:hover {
         color: blue;

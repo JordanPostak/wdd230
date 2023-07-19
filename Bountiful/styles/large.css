@@ -1,0 +1,315 @@
+@media screen and (min-width: 1200px) {
+    /*header title*/
+    .title-block {
+        height: 50px;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .title-block h4{
+        margin-top: 25px;
+    }
+    .title-block img{
+        position: absolute;
+        top: 55px;
+        right: 2%;
+        width: 250px;
+    }
+    .button-bar {
+        width: 76%;
+        height: 140px;
+        border-right: 7px solid;
+        border-color: rgb(255, 196, 4);
+    }
+    /*Navigation*/
+    nav {
+        background-color: var(--color-accent1);
+    }
+    .nav-closed {
+        width: 50%;
+        margin-top: 15px;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        transform: translateX(0%);
+    }
+    .nav-open {
+        width: 50%;
+        margin-top: 15px;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    
+    /*main*/
+    main{
+        transform: translateY(0%);
+        margin-bottom: 280px;
+    }
+    .home main .grid-toggle{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        gap: 15px;
+        justify-content: center;
+        }
+    .fresh main .grid-toggle{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        gap: 15px;
+        justify-content: center;
+    }
+    .about-us main .grid-toggle{
+        grid-column: 1 / span 3;
+        grid-template-rows: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+        gap: 25px;
+        justify-content: center;
+    }
+    .social-icons ul li {
+        width: 45px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .nav-closed ul{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    nav ul li:hover {
+        transform: scale(1.2);
+        transition: transform .3s
+    }
+    .shoping-cart {
+        position: absolute;
+        top: 90px;
+        right: 28%;
+    }
+        /*hamburger*/
+        .hamburger {
+            display: none;
+        }
+        /*Social media div*/
+        .social-icons {
+            position: absolute;
+            top: 50px;
+            right: 35%;
+        }
+        /*Shoping Cart*/
+        .shoping-cart {
+            width: 55px;
+            margin-left: 25px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .shoping-cart:hover {
+            transform: scale(1.2);
+        }
+        /*Main*/
+        .about-us main {
+            width: 95%;
+        }
+
+        /*Picture Frame*/
+        .home .picture-frame {
+            position: absolute;
+            top: -10px;
+            left: 32.5%;
+            width: auto;
+            z-index: 3;
+        }
+        .fresh .picture-frame {
+            position: absolute;
+            top: -10px;
+            left: 33.5%;
+            width: auto;
+            z-index: 3;
+        }
+        .about-us main .grid-toggle .frame-cusion {
+            width: 90%;
+            margin-left: 90px;
+            grid-column: 1 / span 2;
+            grid-template-rows: 1;
+            z-index: 3;
+        }
+        
+        /*cards*/
+        .card {
+            margin-bottom: 20px;
+        }
+        .card h1 {
+            font-size: 2rem;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+        }
+        .card p {
+            font-size: 1.2rem;
+        }
+        .about-us main .card {
+            width: 92.5%;
+            margin-bottom: 20px;
+        }
+          .card.welcome-section {
+            grid-column: 1 / span 1;
+            grid-row: 1 / 2;
+          }
+          .card.create-mix-section {
+            margin-top: 245px;
+            grid-column: 2 / span 1;
+            grid-row: 1 / 2;
+          }
+          
+          .card.mix-info-section {
+            grid-column: 3 / span 1;
+            grid-row: 1 / 3;
+          }
+          .card.local-areas-section {
+            margin-top: -10px;
+            grid-column: 1 / span 2;
+            grid-row: 2 / 7;
+            width: 92.5%;
+          }
+          .weather-section {
+            grid-column: 3 / span 1;
+            grid-row: 3 / 4;
+          }
+          .fruit-mix {
+            grid-column: 1 / span 1;
+          }
+          .store {
+            grid-column: 3 / span 2;
+          }
+          .cart {
+            grid-column: 2 / span 1;
+            grid-row: 1 / 2;
+            margin-top: 250px;
+          }
+          .about-us main .grid-toggle .flex-toggle {
+            margin-top: -40px;
+          }
+          .about-us main .grid-toggle .us-card {
+            margin-top: -230px;
+            width: 90%;
+            grid-column: 1 / span 2;
+            grid-row: 2;
+          }
+          .about-us main .grid-toggle .locations-card {
+            margin-left: -25px;
+            grid-column: 3 / span 1;
+            grid-row: 1/4;
+          }
+          .about-us main .grid-toggle .history-card {
+            width: 90%;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+          }
+          .about-us main .grid-toggle .flex-toggle {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column: 1 / span 3;
+            grid-row: 3/4;
+            gap: 15px;
+            grid-row: 5;
+          }
+          .about-us main .grid-toggle .flex-toggle .map-card {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+          }
+          .about-us main .grid-toggle .flex-toggle .contact-card {
+            grid-column: 2 / span 1;
+            grid-row: 1;
+          }
+          /*postits*/
+          .postit-alignment {
+            margin-left: 70px;
+            display: flex;
+            flex-direction: row;
+          }
+          /*poloroids*/
+          .polaroid1, .polaroid2, .polaroid3 {
+            margin-left: 60px;
+          }
+          /*chalkboard button*/
+          .chalkboard-button h1{
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-left: -10px;
+          }
+          .chalkboard-button h2{
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            margin-top: -5px;
+          }
+          /*footer*/
+          .footer-display .logo img{
+            position: absolute;
+            width: 100px;
+            bottom: 170px;
+            left: 42%;
+          }
+          footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr .5fr .5fr;
+            gap: 15px;
+          }
+          footer hr {
+            position: absolute;
+            margin-bottom: 410px;
+          }
+          .footer-display{
+
+            justify-content: center;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+          }
+          .footer-general-info {
+
+            justify-content: center;
+            grid-column: 1 / span 1;
+            grid-row: 2;
+          }
+          
+          .footer-contact-info {
+
+            justify-content: center;
+            grid-column: 2 / span 1;
+            grid-row: 2;
+          }
+          
+          .footer-project-info {
+            margin: 0px;
+            padding: 0px;
+
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+          }
+          .footer-last-edited {
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            grid-column: 1 / span 2;
+            grid-row: 4;
+          }
+    }

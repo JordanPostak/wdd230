@@ -243,12 +243,12 @@
             margin-left: 60px;
           }
           /*chalkboard button*/
-          .chalkboard-button h1{
+          .chalkboard-button p.upper{
             font-size: 1.2rem;
             margin-top: 25px;
             margin-left: -10px;
           }
-          .chalkboard-button h2{
+          .chalkboard-button p.lower{
             font-size: 1.2rem;
             margin-bottom: 40px;
             margin-top: -5px;

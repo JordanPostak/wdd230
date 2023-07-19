@@ -702,12 +702,12 @@
         transform: translateX(300%) rotate(-30deg);
         transition: 4s;
       }
-      .chalkboard-button h1 {
+      .chalkboard-button p.upper {
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
         font-size: 1rem;
       }
-      .chalkboard-button h2 {
+      .chalkboard-button p.lower {
         margin-left: 5px;
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
@@ -737,7 +737,7 @@
       .shake-button.animated {
         animation: shake 2s 1;
       }
-      .shake-button h1 {
+      .shake-button p {
         margin-top: 80px;
         margin-left: 0px;
         font-family: var(--font-card-paragraph);

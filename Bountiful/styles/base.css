@@ -67,7 +67,7 @@
         margin-bottom: 0;
         margin-top: 0;
         background: var(--color-gradient);
-        border: 2px solid var(--color-gradient);
+        border-image: var(--color-gradient);
         box-shadow: var(--box-shadow);
       }
     h2 {

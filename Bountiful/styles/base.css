@@ -2,7 +2,7 @@
 /*Overall Rules*/
     :root {
         /* color palette */
-        --color-primary: #38761dff;
+        --color-primary: rgb(38, 82, 20);
         --color-secondary:#f1c232ff;
         --color-accent1: #000000ff;
         --color-accent2: #ff9900ff;
@@ -10,6 +10,7 @@
         --color-accent4: #ffffffff;
         --color-accent5: rgb(143, 143, 143);
         --color-accent6: rgb(101, 152, 80);
+        --color-accent7: rgb(37, 62, 27);
 
         --postit-color1: #ffb6b9; /* pastel pink */
         --postit-color2: #ffa07a; /* pastel salmon */
@@ -181,7 +182,7 @@
         text-align: center;
     }
     footer {
-        background-color: var(--color-accent1);
+        background-color: var(--color-primary);
         font-size: 1rem;
     }
     footer img {
@@ -354,7 +355,7 @@
         position: relative;
         text-align: center;
         margin-bottom: 20px;
-        background-color: var(--color-primary);
+        background-color: var(--color-accent7);
         background-image: url('../images/chalkboard.png');
         background-size: 100% auto;
         background-repeat: repeat-y;
@@ -626,6 +627,9 @@
     }
     .picture-frame h1 {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.331);
+        padding: 2px;
+        border-radius: 4px;
         font-size: 1.2rem;
         margin-top: 5px;
         margin-left: 5px;

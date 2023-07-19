@@ -243,15 +243,16 @@
             margin-left: 60px;
           }
           /*chalkboard button*/
-          .chalkboard-button p.upper{
+          .chalkboard-button .upper{
+            display: block;
             font-size: 1.2rem;
-            margin-top: 25px;
+            margin-top: 27px;
             margin-left: -10px;
           }
-          .chalkboard-button p.lower{
+          .chalkboard-button .lower{
+            display: block;
             font-size: 1.2rem;
             margin-bottom: 40px;
-            margin-top: -5px;
           }
           /*footer*/
           .footer-display .logo img{

@@ -702,13 +702,17 @@
         transform: translateX(300%) rotate(-30deg);
         transition: 4s;
       }
-      .chalkboard-button p.upper {
+      .chalkboard-button .upper {
+        display: block;
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
         font-size: 1rem;
       }
-      .chalkboard-button p.lower {
-        margin-left: 5px;
+      .chalkboard-button .lower {
+        display: block;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
         font-size: 1rem;
@@ -737,20 +741,15 @@
       .shake-button.animated {
         animation: shake 2s 1;
       }
-      .shake-button p {
+      .shake-button span {
+        display: inline-block;
         margin-top: 80px;
         margin-left: 0px;
         font-family: var(--font-card-paragraph);
         color: var(--color-accent4);
         font-size: 1.1rem;
       }
-      .shake-button h2 {
-        margin-left: 5px;
-        font-family: var(--font-card-heading);
-        color: var(--color-accent4);
-        font-size: 1rem;
-        transform: rotate(-15deg);
-      }
+
       /* keyframes for the shaking animation */
     @keyframes shake {
         0% { transform: translateX(0); }

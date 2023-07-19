@@ -1,3 +1,6 @@
+
+
+
 const fruitDataUrl = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 const outputArea = document.getElementById("output-area");
 const submitBtn = document.getElementById("submit-btn");
@@ -34,6 +37,7 @@ fetch(fruitDataUrl)
   });
 
 submitBtn.addEventListener("click", function() {
+
   // Get user input values
   const firstName = document.getElementById("first-name").value;
   const email = document.getElementById("email").value;
@@ -66,7 +70,9 @@ setTimeout(() => {
 }, 2000);
 
  // Scroll to the output area
- outputArea.scrollIntoView({ behavior: "smooth" });
+ setTimeout(function() {
+  outputArea.scrollIntoView({ behavior: "smooth" });
+}, 2000);
 
   // Calculate total nutrition values
   let totalCarbohydrates = 0;
@@ -106,13 +112,11 @@ setTimeout(() => {
       };
 
       // Save the mix data to local storage
-      let mixData = JSON.parse(localStorage.getItem(mixDataKey)) || [];
-      mixData.push(mix);
-      localStorage.setItem(mixDataKey, JSON.stringify(mixData));
+        localStorage.setItem("tempMix", JSON.stringify(mix));
 
-      // Update the specialty drink count
-      const specialtyDrinkCount = getSpecialtyDrinkCount();
-      updateSpecialtyDrinkCount(specialtyDrinkCount + 1);
+        // Update the specialty drink count
+        const specialtyDrinkCount = getSpecialtyDrinkCount();
+        updateSpecialtyDrinkCount(specialtyDrinkCount + 1);
 
       // Format and display output to the output area on the fresh page
       const currentDate = new Date().toLocaleDateString();

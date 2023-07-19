@@ -1,0 +1,202 @@
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+    /*header title*/
+    .title-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .title-block img{
+        width: 400px;
+    }
+    /*Navigation*/
+        /*hamburger*/
+        .nav-closed {
+            width: 97.5%;
+        }
+        /*Social media div*/
+        .social-icons {
+            margin-left: 125px;
+            margin-right: 145px;
+        }
+        .social-icons ul li{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        /*Shoping Cart*/
+        .shoping-cart {
+            width: 55px;
+            margin-left: 25px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .shoping-cart:hover {
+            transform: scale(1.2);
+        }
+        /*Main*/
+        .about-us main {
+            width: 95%;
+        }
+
+        /*Picture Frame*/
+        .picture-frame {
+            width: 84%;
+        }
+        
+        /* Grid Toggle */
+        .home main .grid-toggle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+            gap: 15px;
+            justify-content: center;
+          }
+        .fresh main .grid-toggle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5fr, 5fr, 1fr;
+            gap: 15px;
+            justify-content: center;
+        }
+        .flex-toggle {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+        /*cards*/
+        .card {
+            margin-bottom: 0px;
+        }
+        .about-us main .card {
+            width: 92.5%;
+            margin-bottom: 20px;
+        }
+          .card.welcome-section {
+            grid-column: 1 / span 1;
+            grid-row: 1 / 2;
+          }
+          
+          .card.create-mix-section {
+            grid-column: 1 / span 1;
+            grid-row: 2 / 3;
+          }
+          
+          .card.mix-info-section {
+            grid-column: 2 / span 1;
+            grid-row: 1 / 3;
+          }
+          
+          .card.local-areas-section {
+            margin-top: -10px;
+            grid-column: 1 / span 2;
+            grid-row: 4 / 7;
+            width: 92.5%;
+          }
+          
+          .card.weather-section {
+            grid-column: 1 / span 2;
+            grid-row: 7 / 8;
+            width: 92.5%;
+            padding-bottom: 40px;
+          }
+          .weather-section {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+          }
+          .weather-devider {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          .weather-card {
+            margin-right: 30px;
+            grid-column: 1 / span 1;
+          }
+          .forcast-card {
+            width: 115%;
+            padding-left: 30px;
+            grid-column: 2 / span 1;
+            border-left: 2px solid;
+            border-color: var(--color-accent4);
+          }
+          .card .us-card {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+          }
+          /*postits*/
+          .postit-alignment {
+            margin-left: 70px;
+            display: flex;
+            flex-direction: row;
+          }
+          /*poloroids*/
+          .polaroid1, .polaroid2, .polaroid3 {
+            margin-left: 200px;
+          }
+          .cart {
+            grid-column: 1 / span 2;
+            width: 92.5%;
+          }
+
+          /*footer*/
+          .footer-display .logo img{
+            position: absolute;
+            width: 100px;
+            bottom: 170px;
+            left: 280px;
+          }
+          footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr .5fr .5fr;
+            gap: 15px;
+          }
+          footer hr {
+            position: absolute;
+            margin-bottom: 410px;
+          }
+          .footer-display{
+
+            justify-content: center;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+          }
+          .footer-general-info {
+
+            justify-content: center;
+            grid-column: 1 / span 1;
+            grid-row: 2;
+          }
+          
+          .footer-contact-info {
+
+            justify-content: center;
+            grid-column: 2 / span 1;
+            grid-row: 2;
+          }
+          
+          .footer-project-info {
+            margin: 0px;
+            padding: 0px;
+
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+          }
+          .footer-last-edited {
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            grid-column: 1 / span 2;
+            grid-row: 4;
+          }
+    }

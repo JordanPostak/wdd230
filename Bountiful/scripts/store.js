@@ -145,41 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedMixId = this.value;
         showFrozenMixDetails(selectedMixId);
       });
-
-      // Event listener for adding items to the cart
-      function addToCart(itemId, quantity) {
-        // You can implement the cart functionality here.
-        // For example, add the selected item and quantity to the cart object.
-        // You can store the cart data in local storage or send it to a server.
-        // You can also update the UI to show the items in the cart.
-        console.log(`Added item with ID ${itemId} to the cart. Quantity: ${quantity}`);
-      }
-
-      // Event listener for individual fruit add to cart button
-      document.querySelector(".fruit-items").addEventListener("click", function (event) {
-        if (event.target.classList.contains("order-button")) {
-          const selectedFruitId = event.target.dataset.id;
-          const quantityInput = event.target.parentElement.querySelector(".quantity-input");
-          const quantity = parseInt(quantityInput.value, 10);
-          addToCart(selectedFruitId, quantity);
-          // Clear the displayed details after adding to cart
-          const fruitDetails = document.querySelector(".fruit-item-details");
-          fruitDetails.innerHTML = "";
-        }
-      });
-
-      // Event listener for frozen mix add to cart button
-      document.querySelector(".frozen-mixes").addEventListener("click", function (event) {
-        if (event.target.classList.contains("order-button")) {
-          const selectedMixId = event.target.dataset.id;
-          const quantityInput = event.target.parentElement.querySelector(".quantity-input");
-          const quantity = parseInt(quantityInput.value, 10);
-          addToCart(selectedMixId, quantity);
-          // Clear the displayed details after adding to cart
-          const mixDetails = document.querySelector(".frozen-item-details");
-          mixDetails.innerHTML = "";
-        }
-      });
     })
     .catch(error => {
       console.error("Error fetching data:", error);

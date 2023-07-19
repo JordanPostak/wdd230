@@ -200,6 +200,10 @@
     .footer-up {
         margin-top: 0px;
     }
+    .footer-display a img {
+        width: 100px;
+        margin-left: 50px;
+    }
     /*Scroll Up Button*/
     #scrollToTopBtn {
         position: fixed;

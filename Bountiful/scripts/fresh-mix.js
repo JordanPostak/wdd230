@@ -70,7 +70,6 @@ function displayMixes() {
   specialtyDrinkCountElement.textContent = specialtyDrinkCount.toString();
 
   const mixData = JSON.parse(localStorage.getItem(dataKey)) || [];
-  console.log(mixData);
   const mixesContainer = document.getElementById("mixes-container");
 
   mixData.forEach(mix => {

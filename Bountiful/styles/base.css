@@ -715,10 +715,6 @@
       }
     /*Shake Button*/
     .shake-button {
-        writing-mode: vertical-lr;
-        font-family: var(--font-card-paragraph);
-        font-size: 1.3rem;
-        color: var(--color-accent6);
         padding-left: 25px;
         text-align: left;
         margin: 20px;
@@ -741,11 +737,11 @@
         animation: shake 2s 1;
       }
       .shake-button h1 {
-        margin-top: 30px;
-        margin-left: 12px;
+        margin-top: 80px;
+        margin-left: 0px;
         font-family: var(--font-card-paragraph);
-        color: var(--color-accent6);
-        font-size: 1.3rem;
+        color: var(--color-accent4);
+        font-size: 1.1rem;
       }
       .shake-button h2 {
         margin-left: 5px;
@@ -754,7 +750,7 @@
         font-size: 1rem;
         transform: rotate(-15deg);
       }
-      /* Define the keyframes for the shaking animation */
+      /* keyframes for the shaking animation */
     @keyframes shake {
         0% { transform: translateX(0); }
         5% { transform: translateX(-5px) rotate(-30deg); }

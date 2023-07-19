@@ -50,7 +50,7 @@
         .home main .grid-toggle {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 800px 1000px 3500px 1000px;
+            grid-template-rows: 800px 1000px 3700px 1200px;
             gap: 15px;
             justify-content: center;
           }

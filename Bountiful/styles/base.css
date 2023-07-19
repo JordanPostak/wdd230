@@ -371,10 +371,18 @@
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-shadow: none;
     }
     .card h2 {
+        font-family: var(--font-card-heading);
+        color: var(--color-accent4);
+        font-weight: 400;
+        font-size: 3rem;
+        text-align: left;
+        text-shadow: none;
+    }
+    .card h3 {
         font-family: var(--font-card-heading);
         color: var(--color-accent4);
         font-weight: 400;

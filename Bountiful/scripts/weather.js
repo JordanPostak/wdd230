@@ -87,7 +87,7 @@ async function fetchForecast() {
             forecastElement.classList.add('forecast-day');
   
             forecastElement.innerHTML = `
-            <h2>_ _ _ _ _ _ _ _ _</h2>
+            <h3>_ _ _ _ _ _ _ _ _</h3>
               <h2>${forecastDay}</h2>
               <img src="https://openweathermap.org/img/w/${forecastIconCode}.png" alt="Weather Icon">
               <p>${forecastTemperature}&deg;F</p>

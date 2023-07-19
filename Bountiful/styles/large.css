@@ -152,11 +152,14 @@
             margin-bottom: 20px;
         }
         .card h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
         .card h2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
+        .card h3 {
+          font-size: 1.3rem;
+      }
         .card p {
             font-size: 1.2rem;
         }
@@ -232,12 +235,25 @@
             grid-column: 2 / span 1;
             grid-row: 1;
           }
+          .weather-card, .forcast-card, #forecast-container {
+            display: flex;
+            flex-direction: column;
+          }
           /*postits*/
           .postit-alignment {
             margin-left: 70px;
             display: flex;
             flex-direction: row;
           }
+          .postit1 h1, .postit2 h1, .postit3 h1, .postit4 h1, .postit5 h1, .postit6 h1 {
+            font-size: 1.2rem;
+        }
+          .postit1 h2, .postit2 h2, .postit3 h2, .postit4 h2, .postit5 h2, .postit6 h2 {
+            font-size: 1.1rem;
+        }
+        .postit1 h3, .postit2 h3, .postit3 h3, .postit4 h3, .postit5 h3, .postit6 h3 {
+            font-size: 1rem;
+        }
           /*poloroids*/
           .polaroid1, .polaroid2, .polaroid3 {
             margin-left: 60px;

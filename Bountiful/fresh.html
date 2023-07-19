@@ -69,41 +69,43 @@
                 <h1>Create a Mix!</h1>
                 <div class="email-form">
                   <div class="postit1 stacked">
-                    <h5>First Name</h5>
-                    <input id="first-name" placeholder="First Name">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" placeholder="Type here...">
                   </div>
                 </div>
                 <div class="email-form">
                   <div class="postit2 stacked">
-                    <h5>Email</h5>
-                    <input id="email" placeholder="Email Address">
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="u@example.com...">
                   </div>
                 </div>
                 <div class="email-form">
                   <div class="postit3 stacked">
-                    <h5>Phone</h5>
-                    <input id="phone" placeholder="Phone Number">
+                    <label for="phone">Phone</label>
+                    <input id="phone" placeholder="000...">
                   </div>
                 </div>
                 <div class="email-form">
                   <div class="postit4 stacked">
-                    <h5>Instructions</h5>
-                    <textarea id="special-instructions" placeholder="Special Instructions"></textarea>
+                    <label for="special-instructions">Instructions</label>
+                    <textarea id="special-instructions" placeholder="Step one...."></textarea>
                   </div>
                 </div>
                 <div class="email-form">
                     <div class="postit2 stacked">
-                      <h5>Mix Name</h5>
-                      <textarea id="mix-name" placeholder="Name your Mix"></textarea>
+                      <label for="mix-name">Mix Name</label>
+                      <textarea id="mix-name" placeholder="Name your mix..."></textarea>
                     </div>
                 </div>
                 <div class="fruit-select">
+                  <label for="fruit1">Select fruit 1:</label>
                   <select id="fruit1" class="fruit-option"></select>
+                  <label for="fruit2">Select fruit 2:</label>
                   <select id="fruit2" class="fruit-option"></select>
+                  <label for="fruit3">Select fruit 3:</label>
                   <select id="fruit3" class="fruit-option"></select>
                 </div>
-                
-                <button id="submit-btn" class="shake-button"></button>
+                <button id="submit-btn" class="shake-button"><h1>Press</h1></button>
                 <h2>_____________</h2>  
                 <div id="output-area"></div>
               </div>
@@ -111,8 +113,9 @@
                 <div class="individual-fruits">
                   <h1>Store</h1>
                   <h2>_____________</h2> 
-                  <h2>Individual Fruits :</h2>
+                  <h2>Individual fruits :</h2>
                   <div class="fruit-items">
+                    <label for="fruit-item-info">Select Fruit:</label>
                     <select id="fruit-item-info" class="fruit-item"></select>
                     <!-- Fruits will be dynamically added here -->
                     <div class="fruit-item-details" data-id=""></div>
@@ -121,6 +124,7 @@
                 <h2>_____________</h2> 
                 <div class="frozen-mixes">
                   <h2>Frozen Fruit Mixes</h2>
+                  <label for="mix-item">Select frozen drink mix:</label>
                   <select id="mix-item" class="mix-item"></select>
                   <div class="mix-item-info">
                     <!-- Frozen fruit mixes will be dynamically added here -->

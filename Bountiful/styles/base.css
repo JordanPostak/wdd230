@@ -9,7 +9,7 @@
         --color-accent3: rgb(255, 213, 0);
         --color-accent4: #ffffffff;
         --color-accent5: rgb(143, 143, 143);
-        --color-accent6: rgb(101, 152, 80);
+        --color-accent6: rgb(76, 116, 60);
 
         --postit-color1: #ffb6b9; /* pastel pink */
         --postit-color2: #ffa07a; /* pastel salmon */
@@ -418,7 +418,15 @@
         margin: 0 auto;
         font-size: 1.5rem;
     }
-    .postit1 h5, .postit2 h5, .postit3 h5, .postit4 h5, .postit5 h5, .postit6 h5 {
+    .postit1 label, .postit2 label, .postit3 label, .postit4 label, .postit5 label, .postit6 label {
+        color: var(--color-accent1);
+        font-family: var(--font-postit-paragraph);
+        margin: 0px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .postit1 h1, .postit2 h1, .postit3 h1, .postit4 h1, .postit5 h1, .postit6 h1 {
         position: relative;
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
@@ -427,7 +435,7 @@
         font-weight: bold;
         text-decoration: underline;
     }
-    .postit1 h6, .postit2 h6, .postit3 h6, .postit4 h6, .postit5 h6, .postit6 h6 {
+    .postit1 h2, .postit2 h2, .postit3 h2, .postit4 h2, .postit5 h2, .postit6 h2 {
         position: relative;
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
@@ -437,7 +445,7 @@
         font-size: 1.2rem;
         font-weight: lighter;
     }
-    .postit1 h7, .postit2 h7, .postit3 h7, .postit4 h7, .postit5 h7, .postit6 h7 {
+    .postit1 h3, .postit2 h3, .postit3 h3, .postit4 h3, .postit5 h3, .postit6 h3 {
         position: relative;
         color: var(--color-accent1);
         font-family: var(--font-postit-paragraph);
@@ -707,6 +715,10 @@
       }
     /*Shake Button*/
     .shake-button {
+        writing-mode: vertical-lr;
+        font-family: var(--font-card-paragraph);
+        font-size: 1.3rem;
+        color: var(--color-accent6);
         padding-left: 25px;
         text-align: left;
         margin: 20px;
@@ -729,9 +741,11 @@
         animation: shake 2s 1;
       }
       .shake-button h1 {
-        font-family: var(--font-card-heading);
-        color: var(--color-accent4);
-        font-size: 1rem;
+        margin-top: 30px;
+        margin-left: 12px;
+        font-family: var(--font-card-paragraph);
+        color: var(--color-accent6);
+        font-size: 1.3rem;
       }
       .shake-button h2 {
         margin-left: 5px;
@@ -809,7 +823,16 @@ transform: scale(1.2);
 }
   /*Fruit Select*/
   .fruit-select {
-    margin-top: 130px;
+    margin-top: 150px;
+  }
+  .fruit-select label, .frozen-mixes label, .individual-fruits label {
+    font-family: var(--font-card-paragraph);
+    color: var(--color-accent4);
+    font-size: 1.5rem;
+    text-shadow: none;
+  }
+  .fruit-select select, .frozen-mixes select, .individual-fruits select {
+    margin-top: -0px;
   }
       
 /*home page weather*/   

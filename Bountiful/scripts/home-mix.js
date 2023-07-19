@@ -53,9 +53,9 @@ function generatePostIt(mix) {
   const mixContainer = document.createElement("div");
   mixContainer.classList.add(randomClass, "stacked"); // Add the randomly selected post-it class and the "stacked" id
   mixContainer.innerHTML = `
-    <h5>${mix.mixName}</h5>
-    <h6>${mix.selectedFruits.join(", ")}</h6>
-    <h7>${mix.totalProtein.toFixed(2)} g Protein, ${mix.totalFat.toFixed(2)} g Fat, ${mix.totalSugar.toFixed(2)} g Sugar, ${mix.totalCalories.toFixed(2)} Calories</h7>
+    <h1>${mix.mixName}</h1>
+    <h2>${mix.selectedFruits.join(", ")}</h2>
+    <h3>${mix.totalProtein.toFixed(2)} g Protein, ${mix.totalFat.toFixed(2)} g Fat, ${mix.totalSugar.toFixed(2)} g Sugar, ${mix.totalCalories.toFixed(2)} Calories</h3>
   `;
   return mixContainer;
 }
